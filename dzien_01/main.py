@@ -261,35 +261,64 @@
 # > 40 otyłość III stopnia (chorobliwa)
 
 
-weight = input("Podaj masę [kg]: ")
-weight = float(weight)
+# weight = input("Podaj masę [kg]: ")
+# weight = float(weight)
 
-height = input("Podaj wzrost [cm]: ")
-height = float(height) / 100
+# height = input("Podaj wzrost [cm]: ")
+# height = float(height) / 100
 
-bmi = weight / height**2
+# bmi = weight / height**2
 
-if bmi <= 16:
-    bmi_comment = "wygłodzenie"
-elif bmi <= 17:
-    bmi_comment = "wychudzenie"
-elif bmi <= 18.5:
-    bmi_comment = "niedowagę"
-elif bmi <= 25:
-    bmi_comment = "pożądaną masa ciała"
-elif bmi <= 30:
-    bmi_comment = "nadwagę"
-elif bmi <= 35:
-    bmi_comment = "otyłość I stopnia"
-elif bmi <= 40:
-    bmi_comment = "otyłość II stopnia (duża)"
-else:
-    bmi_comment = "otyłość III stopnia (chorobliwa)"
+# if bmi <= 16:
+#     bmi_comment = "wygłodzenie"
+# elif bmi <= 17:
+#     bmi_comment = "wychudzenie"
+# elif bmi <= 18.5:
+#     bmi_comment = "niedowagę"
+# elif bmi <= 25:
+#     bmi_comment = "pożądaną masa ciała"
+# elif bmi <= 30:
+#     bmi_comment = "nadwagę"
+# elif bmi <= 35:
+#     bmi_comment = "otyłość I stopnia"
+# elif bmi <= 40:
+#     bmi_comment = "otyłość II stopnia (duża)"
+# else:
+#     bmi_comment = "otyłość III stopnia (chorobliwa)"
 
-print(
-    f"\nTwój wynik BMI:\n- przy wzroście {height} cm\n- wadze {weight} kg\nto {bmi:.2f}, co oznacza {bmi_comment}"
-)
+# print(
+#     f"\nTwój wynik BMI:\n- przy wzroście {height} cm\n- wadze {weight} kg\nto {bmi:.2f}, co oznacza {bmi_comment}"
+# )
 
 
 # (16 <= bmi) and (bmi < 17)
 # 16 <= bmi < 17
+
+
+
+### PĘTLE
+
+# od 0 do 10, ale bez 10
+# for i in range(10):
+#     # 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+#     print(f"{i=}")
+
+# od 5 do 10, ale bez 10
+# for i in range(5, 10):
+#     print(f"{i=}")
+
+# od 2 do 20, co 3, ale bez 20
+# for i in range(2, 20, 3):
+#     print(f"{i=}")
+
+# range() zwraca obiekt typu "iterable"
+# przechodzimy po pętli iteratorem
+
+# napis = "abcdefghijk"
+# for litereka in napis:
+#     print(litereka)
+    
+    
+### ZADANIE 6
+
+# Wyświetl 20 kolejnych potęg liczby 2.
