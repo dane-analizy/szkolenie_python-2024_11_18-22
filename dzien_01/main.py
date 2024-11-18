@@ -366,15 +366,41 @@
 # oraz ile mamy aktualnie zgromadzone po doliczeniu odsetek.
 # Zakładamy kapitalizację odsetek co miesiąc.
 
-money = 100_000
-procent_rok = 6
-miesiace = 18
+# money = 100_000
+# procent_rok = 6
+# miesiace = 18
 
-p_miesiac = procent_rok / 100 / 12
+# p_miesiac = procent_rok / 100 / 12
 
-saldo = money
-for m in range(miesiace):
-    odsetki = p_miesiac * saldo
-    saldo = saldo + odsetki
-    # saldo += odsetki
-    print(f"Po miesiącu {m+1} {saldo=}")
+# saldo = money
+# for m in range(miesiace):
+#     odsetki = p_miesiac * saldo
+#     saldo = saldo + odsetki
+#     # saldo += odsetki
+#     print(f"Po miesiącu {m+1} {saldo=}")
+
+
+
+## continue i break
+
+# continue - przechodzi do kolejnej iteracji
+# for i in range(20):
+#     print(f"Przed ifem: {i=}")
+#     if i < 10:
+#         continue
+#     print(f"Po ifie: {i=}")
+
+
+# break - kończy całą pętlę
+# for i in range(20):
+#     print(f"Przed ifem: {i=}")
+#     if i == 10:
+#         break
+#     print(f"Po ifie: {i=}")
+
+
+
+#### ZADANIE 9
+
+# Wypisz wynik dzielenia 1/x gdzie x to kolejne liczby od -10 do 10.
+# Zrób tak, aby zapobiec dzieleniu przez 0
