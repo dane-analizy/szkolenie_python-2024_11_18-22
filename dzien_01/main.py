@@ -16,6 +16,9 @@
 #         print("Dzień dobry")
 # print("Dzień dobry")
 
+
+## PEP 8 - standardy pisania kodu
+
 # # nazwy zmiennych
 # kwotapodatku
 # KwotaPodatku
@@ -616,3 +619,30 @@
 #### ZADANIE 12
 
 # Z pliku "plik.txt" wyświetl wszystkie niepuste linie.
+
+# plik = open("plik.txt", "r", encoding="utf-8").readlines()
+# for linia in plik:
+#     if len(linia.strip()) == 0:
+#         continue
+#     print(linia.strip())
+
+
+# plik = open("plik.txt", "r", encoding="utf-8").readlines()
+# for linia in plik:
+#     if linia.strip():
+#         print(linia.strip())
+
+
+# czytanie linia po linii
+plik = open("plik.txt", "r", encoding="utf-8")
+czy_konczyc = False
+licznik = 1
+while not czy_konczyc:
+    zawartosc = plik.readline()
+    if not zawartosc:
+        czy_konczyc = True
+
+    print(licznik)
+    print(zawartosc.strip())
+    print()
+    licznik += 1
