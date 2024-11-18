@@ -259,3 +259,37 @@
 # 30 - 34,999 => otyłość I stopnia
 # 35 - 39,999 => otyłość II stopnia (duża)
 # > 40 otyłość III stopnia (chorobliwa)
+
+
+weight = input("Podaj masę [kg]: ")
+weight = float(weight)
+
+height = input("Podaj wzrost [cm]: ")
+height = float(height) / 100
+
+bmi = weight / height**2
+
+if bmi <= 16:
+    bmi_comment = "wygłodzenie"
+elif bmi <= 17:
+    bmi_comment = "wychudzenie"
+elif bmi <= 18.5:
+    bmi_comment = "niedowagę"
+elif bmi <= 25:
+    bmi_comment = "pożądaną masa ciała"
+elif bmi <= 30:
+    bmi_comment = "nadwagę"
+elif bmi <= 35:
+    bmi_comment = "otyłość I stopnia"
+elif bmi <= 40:
+    bmi_comment = "otyłość II stopnia (duża)"
+else:
+    bmi_comment = "otyłość III stopnia (chorobliwa)"
+
+print(
+    f"\nTwój wynik BMI:\n- przy wzroście {height} cm\n- wadze {weight} kg\nto {bmi:.2f}, co oznacza {bmi_comment}"
+)
+
+
+# (16 <= bmi) and (bmi < 17)
+# 16 <= bmi < 17
