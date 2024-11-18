@@ -504,6 +504,7 @@
 
 # napis = "Ala ma kota"
 # print(napis.replace("Ala", "Bożena"))
+# print(napis.replace("kot", ""))
 # print(napis)
 
 
