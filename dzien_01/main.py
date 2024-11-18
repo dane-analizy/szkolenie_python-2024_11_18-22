@@ -97,7 +97,37 @@
 # nazwisko = input("Podaj nazwisko")
 # print(f"Witaj {imie} {nazwisko}!")
 
+# stringi można mnożyć przez liczbę
+# napis = "abc"
+# print(napis * 20)
+
 
 ### ZADANIE 2
 
 # Napisz kalkulator dodający dwie liczby pobrane od użytkownika.
+
+
+# a = input("podaj pierwszą liczbę: ")
+# b = input("podaj drugą liczbę: ")
+
+# a = float(a)
+# b = float(b)
+
+# print(type(a))
+# c = a + b
+# print(type(c))
+# print(f"Wynik dodawania {a} + {b} = {c}")
+
+
+# Definicja wskaźnika BMI https://pl.wikipedia.org/wiki/Wska%C5%BAnik_masy_cia%C5%82a
+# BMI = masa [kg] / wzrost^2 [m]
+
+### ZADANIE 3
+
+# Napisz program, który pobierze od użytkownika masę i wzrost,
+# a następnie policzy BMI i wypisze wynik na konsolę.
+
+# potęgowanie w pythonie:
+# x**y => x do potęgi y
+# pow(x, y) => x do potęgi y
+
