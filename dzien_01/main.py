@@ -436,10 +436,9 @@
 
 # while wynik < 2000:
 #     print(f"{potega=} i {wynik=}")
-#     potega = potega + 1 
+#     potega = potega + 1
 #     # potega += 1
 #     wynik = 2**potega
-
 
 
 # liczba_kremow = 1000
@@ -447,8 +446,7 @@
 #     print(f"zapraszam, mam jeszcze {liczba_kremow} kremów")
 #     liczba_kremow = liczba_kremow - 52
 
-# print("sklep już zamknięty")    
-
+# print("sklep już zamknięty")
 
 
 ### ZADANIE 10
@@ -470,7 +468,6 @@
 #     print("a jest jakieś")
 # else:
 #     print("a jest None, False, albo 0")
-
 
 
 # operacje na stringach
@@ -512,3 +509,76 @@
 
 # Napisz program, który przyjmie od użytkownika ciąg tekstowy,
 # następnie usunie z niego znaki: ,.?! a następnie powiększony do dużych liter wynik wyświetli w konsoli.
+
+# slowo = ""
+# while slowo.lower().strip() != "stop":
+#     slowo = input("podaj słowo: ")
+#     slowo = slowo.replace(",", "")
+#     slowo = slowo.replace(".", "")
+#     slowo = slowo.replace("?", "")
+#     slowo = slowo.replace("!", "")
+#     slowo = slowo.upper() # STOP
+#     print(slowo)
+# print("zatrzymano")
+
+
+# podejście nr 1
+
+# slowo = input("podaj słowo: ")
+# slowo = slowo.replace(",", "")
+# slowo = slowo.replace(".", "")
+# slowo = slowo.replace("?", "")
+# slowo = slowo.replace("!", "")
+# slowo = slowo.replace("+", "")
+# slowo = slowo.upper()
+# print(slowo)
+
+
+# podejście nr 2
+
+# slowo = input("podaj slowo ")
+# niepotrzebne_znaki = ",.?!+"
+
+# for znak in niepotrzebne_znaki:
+#     slowo = slowo.replace(znak, "")
+
+# slowo_wielkie_litery = slowo.upper()
+
+# print(slowo_wielkie_litery)
+
+
+# czy ciąg wystepuje w innym ciągu?
+# napis = "Ala ma kota"
+# ciag = 'ma'
+# if ciag in napis:
+#     print(f"'{ciag}' jest w '{napis}'")
+# else:
+#     print(f"'{ciag}' nie ma w '{napis}'")
+
+# podejście nr 3
+
+# text = input("Podaj tekst: ")
+
+# forbidden = ".,?!"
+# new_text = ""
+
+# for letter in text:
+#     if letter in forbidden:
+#         continue
+#     new_text = new_text + letter.upper()
+
+# print(new_text)
+
+
+# podejście nr 3b
+# text = input("Podaj tekst: ")
+
+# forbidden = ".,?!"
+# new_text = ""
+
+# for letter in text:
+#     if letter not in forbidden:
+#         new_text = new_text + letter.upper()
+
+# print(new_text)
+
