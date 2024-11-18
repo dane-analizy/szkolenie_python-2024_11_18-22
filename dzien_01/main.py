@@ -245,7 +245,6 @@
 # print(f"podałeś: {zmienna=}, {informacja}")
 
 
-
 ### ZADANIE 5
 
 # Napisz program, który pobierze od użytkownika masę i wzrost,
@@ -295,7 +294,6 @@
 # 16 <= bmi < 17
 
 
-
 ### PĘTLE
 
 # od 0 do 10, ale bez 10
@@ -317,8 +315,8 @@
 # napis = "abcdefghijk"
 # for litereka in napis:
 #     print(litereka)
-    
-    
+
+
 ### ZADANIE 6
 
 # Wyświetl 20 kolejnych potęg liczby 2 (od 2^0 do 2^19).
@@ -326,8 +324,8 @@
 # for potega in range(20):
 #     wynik = 2**potega
 #     print(f"2^{potega} = {wynik}")
-    
-    
+
+
 # for i in range(20):
 #     print(f"2^{i}={2**i}")
 
@@ -365,5 +363,18 @@
 # - oprocentowanie w skali roku
 # - ilość miesięcy na jaką zakładamy lokatę
 # Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc
-# oraz ile mamy aktualnie zgromadzone po doliczeniu odsetek. 
+# oraz ile mamy aktualnie zgromadzone po doliczeniu odsetek.
 # Zakładamy kapitalizację odsetek co miesiąc.
+
+money = 100_000
+procent_rok = 6
+miesiace = 18
+
+p_miesiac = procent_rok / 100 / 12
+
+saldo = money
+for m in range(miesiace):
+    odsetki = p_miesiac * saldo
+    saldo = saldo + odsetki
+    # saldo += odsetki
+    print(f"Po miesiącu {m+1} {saldo=}")
