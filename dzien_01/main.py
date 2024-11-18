@@ -10,7 +10,7 @@
 # for a in range(10):
 #     print("Dzień dobry")
 #     print("Dzień dobry")
-    
+
 #     for a in range(10):
 #         print("Dzień dobry")
 #         print("Dzień dobry")
@@ -64,5 +64,31 @@
 # # print(type(zmienna_napis))
 
 # # zmienna_nowa = zmienna_int + zmienna_float
+# # zmienna_nowa = zmienna_int + 20
 # zmienna_nowa = zmienna_float + 10
 # print(type(zmienna_nowa))
+
+# a = 10
+# s = "ala ma kota"
+# # print(a+s)
+# # print(a,s, "1111 ", "2222", "3333")
+
+# # f-sting
+# napis = f"ALA MA KOTA: {s} {a}{a}"
+# print(napis)
+
+# pobieranie informacji od użytkownika
+
+# a = 123
+# b = -60
+# wynik = a + b
+# print(f"Wynik dodawania a+b={wynik}")
+
+# dane_od_uzytkownika = input("Podaj coś:")
+# print(dane_od_uzytkownika)
+
+
+### ZADANIE 1
+
+# Napisz program, który pobierze od użytkownika imię i nazwisko (jako dwa pytania),
+# a potem wypisze w konsoli pozdrowienie "Witaj IMIĘ NAZWISKO!"
