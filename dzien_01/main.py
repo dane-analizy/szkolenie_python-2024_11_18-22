@@ -92,3 +92,7 @@
 
 # Napisz program, który pobierze od użytkownika imię i nazwisko (jako dwa pytania),
 # a potem wypisze w konsoli pozdrowienie "Witaj IMIĘ NAZWISKO!"
+
+imie = input("Podaj imię: ")
+nazwisko = input("Podaj nazwisko")
+print(f"Witaj {imie} {nazwisko}!")
