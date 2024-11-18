@@ -357,3 +357,13 @@
 #         print(f"{liczba=} jest nieparzysta")
 #     else:
 #         print(f"{liczba=} jest parzysta")
+
+#### ZADANIE 8
+
+# Napisz symulator lokaty Symulator ma przyjmować zmienne:
+# - kwotę lokaty
+# - oprocentowanie w skali roku
+# - ilość miesięcy na jaką zakładamy lokatę
+# Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc
+# oraz ile mamy aktualnie zgromadzone po doliczeniu odsetek. 
+# Zakładamy kapitalizację odsetek co miesiąc.
