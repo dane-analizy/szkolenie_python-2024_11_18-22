@@ -456,3 +456,58 @@
 # Napisz kod, który w nieskończoność będzie pytał użytkownika o kolejne słowa.
 # To co wpisze użytkownik - wypisujemy na ekranie.
 # Ale jeśli użytkownika wpisze słowo "stop" - kończymy program, dziękując za współpracę.
+
+# slowo = None
+
+# while slowo != "stop":
+#     slowo = input("podaj slowo")
+#     print(f"{slowo}")
+# print("slowo to stop")
+
+
+# a = False # zobacz też None, 0, True, "", [], 1 itd
+# if a:
+#     print("a jest jakieś")
+# else:
+#     print("a jest None, False, albo 0")
+
+
+
+# operacje na stringach
+
+# slowo = "    a    Ala ma the Kota      "
+# print(slowo)
+
+# print(f"|{slowo.count(' ')}|")
+# print(f"|{slowo.capitalize()}|")
+# print(f"|{slowo.title()}|")
+# print(f"|{slowo.lower()}|")
+# print(f"|{slowo.upper()}|")
+# print(f"|{slowo.strip()}|")
+# print(f"|{slowo.lstrip()}|")
+# print(f"|{slowo.rstrip()}|")
+
+# print(len(slowo))
+# print(len(slowo.strip()))
+
+
+# napis = '1234567890'
+# print(napis[2])
+# print(napis[0])
+
+# slowo = ""
+# while slowo.lower() != "stop":
+#     slowo = input("podaj slowo")
+#     print(f"{slowo}")
+# print("slowo to stop")
+
+
+# napis = "Ala ma kota"
+# print(napis.replace("Ala", "Bożena"))
+# print(napis)
+
+
+#### ZADANIE 11
+
+# Napisz program, który przyjmie od użytkownika ciąg tekstowy,
+# następnie usunie z niego znaki: ,.?! a następnie powiększony do dużych liter wynik wyświetli w konsoli.
