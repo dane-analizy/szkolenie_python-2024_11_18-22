@@ -380,7 +380,6 @@
 #     print(f"Po miesiącu {m+1} {saldo=}")
 
 
-
 ## continue i break
 
 # continue - przechodzi do kolejnej iteracji
@@ -399,8 +398,28 @@
 #     print(f"Po ifie: {i=}")
 
 
-
 #### ZADANIE 9
 
 # Wypisz wynik dzielenia 1/x gdzie x to kolejne liczby od -10 do 10.
 # Zrób tak, aby zapobiec dzieleniu przez 0
+
+# for x in range (-10, 11):
+#     if x == 0:
+#         print(f"{x} nie dziel przez 0")
+#     else:
+#         wynik = 1/x
+#         print(f"{wynik}")
+
+
+# for i in range(-10, 11):
+#     if i == 0:
+#         print(f"{i} = 0 - opuszczam")
+#         continue
+#     if i > 50:
+#         print(f"{i} > 50 - przerywam")
+#         break
+#     print(1 / i)
+# else:
+#     print("Else po forze - pętla przeszła w całości, więc się wykonuję")
+
+# print("Po całym bloku for")
