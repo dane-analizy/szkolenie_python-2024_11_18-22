@@ -423,3 +423,36 @@
 #     print("Else po forze - pętla przeszła w całości, więc się wykonuję")
 
 # print("Po całym bloku for")
+
+
+# Pętla While
+
+
+# Napisz pętlę while która będzie wyświetlała kolejne potęgi liczby 2 aż wartość potęgi
+# (wynik potęgowania) nie przekroczy wartości 2000.
+
+# potega = 1
+# wynik = 2**potega
+
+# while wynik < 2000:
+#     print(f"{potega=} i {wynik=}")
+#     potega = potega + 1 
+#     # potega += 1
+#     wynik = 2**potega
+
+
+
+# liczba_kremow = 1000
+# while liczba_kremow > 0:
+#     print(f"zapraszam, mam jeszcze {liczba_kremow} kremów")
+#     liczba_kremow = liczba_kremow - 52
+
+# print("sklep już zamknięty")    
+
+
+
+### ZADANIE 10
+
+# Napisz kod, który w nieskończoność będzie pytał użytkownika o kolejne słowa.
+# To co wpisze użytkownik - wypisujemy na ekranie.
+# Ale jeśli użytkownika wpisze słowo "stop" - kończymy program, dziękując za współpracę.
