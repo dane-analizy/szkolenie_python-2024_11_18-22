@@ -321,4 +321,4 @@
     
 ### ZADANIE 6
 
-# Wyświetl 20 kolejnych potęg liczby 2.
+# Wyświetl 20 kolejnych potęg liczby 2 (od 2^0 do 20^19).
