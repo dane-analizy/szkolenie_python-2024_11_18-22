@@ -1,5 +1,5 @@
 Pierwsza linia pliku
      spacje na początku w drugiej linii
 
-czwarta linia, bo trzecia była pusta
-piąta linia bez entera na końcu
+czwarta linia, bo trzecia była pusta    
+piąta linia bez entera na  końcu

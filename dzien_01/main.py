@@ -582,3 +582,37 @@
 
 # print(new_text)
 
+
+# operacje na plikach - wczytywanie
+
+# plik = open("plik.txt", "r", encoding="utf-8")
+# print(plik)
+# zawartosc = plik.read()
+# print(zawartosc)
+# plik.close()
+
+# for linia in open("plik.txt", "r", encoding="utf-8"):
+#     # print(f"|{linia}|")
+#     linia_czysta = linia.replace("\n", "")
+#     # linia_czysta = linia.strip()
+#     print(f"|{linia_czysta}|")
+
+# # wczytanie linii z osobna
+# zawartosc = open("plik.txt", "r", encoding="utf-8").readlines()
+# print(len(zawartosc))
+# print(zawartosc[0])
+
+# # wczytanie wszystkiego na raz
+# zawartosc = open("plik.txt", "r", encoding="utf-8").read()
+# print(len(zawartosc))
+# print(zawartosc[0])
+
+
+# zawartosc = open("plik.txt", "r", encoding="utf-8").readlines()
+# for linia in zawartosc:
+#     print(linia.strip())
+
+
+#### ZADANIE 12
+
+# Z pliku "plik.txt" wyświetl wszystkie niepuste linie.
