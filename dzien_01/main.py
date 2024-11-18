@@ -131,3 +131,101 @@
 # x**y => x do potęgi y
 # pow(x, y) => x do potęgi y
 
+# masa = input("Podaj mase ciała w kg: ")
+# wzrost = input("Podaj wzrost w metrach: ")
+# masa = float(masa)
+# wzrost = float(wzrost)
+# bmi = masa / (wzrost**2)
+# bmi = round(bmi, 2)
+# print(f"Twój wskaźnik BMI wynosi {bmi}")
+
+# kwota_wolna_od_podatku = 123
+# gwgg = kwota_wolna_od_podatku**2
+# adg = kwota_wolna_od_podatku - 10
+
+# kwota_wolna_od_podatku
+
+
+### INSTRUKCJE WARUNKOWE
+
+# a = 0
+# if a > 0:
+#     print(f"Liczba a={a} jest dodatnia")
+#     print("Druga linia bloku pod if")
+#     print("A tu jeszcze coś")
+
+# if a < 0:
+#     print(f"Liczba a={a} jest ujemna")
+
+# if a == 0:
+#     print("a jest zerem")
+
+# print("To już jest po ifie")
+
+
+# a = 0
+# if a > 0:
+#     print(f"Liczba a={a} jest dodatnia")
+#     print("Druga linia bloku pod if")
+#     print("A tu jeszcze coś")
+# else:
+#     print("a nie jest dodatnie")
+
+# print("To już jest po ifie")
+
+
+# a = -10
+# if a > 0:
+#     print(f"Liczba a={a} jest dodatnia")
+#     print("Druga linia bloku pod if")
+#     print("A tu jeszcze coś")
+# elif a < 0:
+#     print(f"Liczba a={a} jest ujemna")
+# else:
+#     print("a jest zerem")
+
+# print("To już jest po ifie")
+
+# != -> nie-równe
+
+
+# a =1234
+# if a > 1:
+#     print("costam")
+# else:
+#     pass # instrukcja która ni nie robi
+
+# def f():
+#     pass
+
+
+# ciekawostki związane z f-stringami
+
+# liczba = 123.456789
+# print(f"{liczba}")
+
+# if kraj == "polska":
+#     numer = f"+48 {numertelefonu}"
+
+# napis = f"{liczba}"
+# print(napis)
+
+# print(f"{liczba:.2f}")
+
+# print(f"{1/3:.6f}")
+# print(f"{1/3:%}")
+# print(f"{1/3:.1%}")
+
+# napis = "Jasio"
+# print(f"|{napis:<20}|")
+# print(f"|{napis:>20}|")
+# print(f"|{napis:^20}|")
+
+# print(f"|{1/3:^20.1%}|")
+
+
+### ZADANIE 4
+
+# Niech użytkownik poda jakąś liczbę. W odpowiedzi wyświetlamy tę liczbę
+# i informację czy liczba jest dodatnia, ujemna czy też jest zerem.
+
