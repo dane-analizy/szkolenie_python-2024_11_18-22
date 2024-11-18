@@ -321,4 +321,27 @@
     
 ### ZADANIE 6
 
-# Wyświetl 20 kolejnych potęg liczby 2 (od 2^0 do 20^19).
+# Wyświetl 20 kolejnych potęg liczby 2 (od 2^0 do 2^19).
+
+# for potega in range(20):
+#     wynik = 2**potega
+#     print(f"2^{potega} = {wynik}")
+    
+    
+# for i in range(20):
+#     print(f"2^{i}={2**i}")
+
+
+# # reszta "r" z dzielenia "x przez y": r = x % y
+# print(4%2)
+# print(4 % 3)
+
+# # wartość całkowita z dzielenia X przez Y
+# print(11 // 3)
+# print(11 % 3)
+
+
+
+### ZADANIE 7
+
+# Wydrukuj liczby od 1 do 100 włącznie razem z informacją czy liczba jest parzysta czy nieparzysta.
