@@ -341,7 +341,19 @@
 # print(11 % 3)
 
 
-
 ### ZADANIE 7
 
 # Wydrukuj liczby od 1 do 100 włącznie razem z informacją czy liczba jest parzysta czy nieparzysta.
+
+# for liczba in range(1, 101):
+#     if liczba % 2 == 0:
+#         print(f"{liczba=} jest parzysta")
+#     else:
+#         print(f"{liczba=} jest nieparzysta")
+
+# odwrócony warunek logiczny:
+# for liczba in range(1, 101):
+#     if liczba % 2:
+#         print(f"{liczba=} jest nieparzysta")
+#     else:
+#         print(f"{liczba=} jest parzysta")
