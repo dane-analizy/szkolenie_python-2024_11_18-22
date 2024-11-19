@@ -396,9 +396,9 @@
 
 
 
-# sortowanie
-lista = [45, 12, 90, 67, 83]
-print(lista)
+# # sortowanie
+# lista = [45, 12, 90, 67, 83]
+# print(lista)
 
 # lista_posortowana = sorted(lista)
 # print(lista_posortowana)
@@ -434,3 +434,29 @@ print(lista)
 
 # dataframe["bmi"] = dataframe["waga"] / (dataframe["wzrost"]/100)**2
 # print(dataframe)
+
+
+# sortowanie ciąg dalszy
+# lista = [1, 2, "abc", "efg", 5, 10] # <- to sie nie uda
+# print(sorted(lista))
+
+# lista = [[4, 1], [2, 3], [1, 4], [3, 2]]
+# # print(sorted(lista))
+
+# # print(sorted(lista, key=lambda para: para[1]))
+
+# def wybieracz(element):
+#     return element[1]
+
+# print(sorted(lista, key=wybieracz))
+
+
+# print(sorted(lista, key=lambda para: para[1], reverse=True))
+
+
+
+#### ZADANIE 20
+
+# Korzystając z kodu z Zadania 19 zbuduj listę zawodników z ich BMI oraz posortują ją na dwa sposoby (wypisz wyniki sortowania):
+# 1. wg nazwiska (alfabetycznie A-Z)
+# 2. wg BMI malejąco
