@@ -236,3 +236,42 @@
 
 # Korzystając z list składanych wygeneruj listę 10 losowych liczb z zakresu 0-100.
 # Wyświetl tę listę. Spróbuj zrobić to w jak najkrótszym zapisie.
+
+# for iterator in iterable
+
+# import random
+
+# lista1 = [random.randint(1, 100) for _ in range(10)]
+# print(lista1)
+
+# # albo krócej:
+# print([random.randint(1, 100) for _ in range(10)])
+
+
+# zasięg zmiennej iteratora
+# lista = []
+# for i in range(10):
+#     lista.append(i)
+# print(lista)
+# print(f"{i=}")
+
+# lista = [i for i in range(10)]
+# print(lista)
+# print(f"{i=}")
+
+# filtrowanie na liście składanej
+# lista = []
+# for i in range(50):
+#     if i % 2:
+#         lista.append(i)
+# print(lista)
+
+
+# lista = [
+#     i                          <== co dodajemy listy
+#     for i in range(50)         <== po czym iterujemy
+#     if i % 2                   <== warunek czy dodawać
+#     ]
+
+lista = [i for i in range(50) if i % 2]
+print(lista)
