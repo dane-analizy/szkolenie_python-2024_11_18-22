@@ -44,7 +44,7 @@
 #     print("piątka jest na liście")
 
 
-lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5]
+# lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5]
 
 # zakres elementów z listy
 # print(lista[1:4])
@@ -54,9 +54,20 @@ lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5]
 # zakres elementów ale co N-ty element?
 # print(lista[1:100:3])
 
-print(lista[ :5])
-print(lista[5: ])
-print(lista[::2]) # [0:-1:2]
+# print(lista[ :5])
+# print(lista[5: ])
+# print(lista[::2]) # [0:-1:2]
 
-# odwrócenie kolejności listy
-print(lista[::-1])
+# # odwrócenie kolejności listy
+# print(lista[::-1])
+
+# napis = "abcdefghijkl"
+# print(napis[5:9])
+# print(napis[::-1])
+
+
+#### ZADANIE 13
+
+# Pobierz od użytkownika jakiś tekst/napis/słowo. Sprawdź czy jest palindromem,
+# czyli czy pisane od przodu i od tyłu jest takie samo - np. "kajak"
+
