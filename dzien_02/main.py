@@ -395,7 +395,6 @@
 # print(osoby)
 
 
-
 # # sortowanie
 # lista = [45, 12, 90, 67, 83]
 # print(lista)
@@ -454,9 +453,101 @@
 # print(sorted(lista, key=lambda para: para[1], reverse=True))
 
 
-
 #### ZADANIE 20
 
 # Korzystając z kodu z Zadania 19 zbuduj listę zawodników z ich BMI oraz posortują ją na dwa sposoby (wypisz wyniki sortowania):
 # 1. wg nazwiska (alfabetycznie A-Z)
 # 2. wg BMI malejąco
+
+
+# osoby = [osoba.strip().split(";") for osoba in open("osoby.csv", "r", encoding="utf-8")]
+# osoby = [
+#     [
+#         osoba[0],
+#         osoba[1],
+#         float(osoba[2]),
+#         float(osoba[3]),
+#         float(osoba[3]) / ((float(osoba[2]) / 100) ** 2),
+#     ]
+#     for osoba in osoby
+# ]
+
+# print(f"sortowanie wg nazwiska rosnąco:")
+# osoby_gotowe = sorted(osoby, key=lambda osoba: osoba[1])
+# for osoba in osoby_gotowe:
+#     print(osoba)
+
+# print(f"sortowanie wg BMI malejąco:")
+# osoby_gotowe = sorted(osoby, key=lambda osoba: osoba[4], reverse=True)
+# for osoba in osoby_gotowe:
+#     print(osoba)
+
+
+# join() -> łączenie listy w string
+
+# lista = [
+#     "janek",
+#     "marek",
+#     "zdzichu",
+#     "tomek",
+# ]  # docelowo chcemy: "janek,marek,zdzichu,tomek"
+# wynikowy_str = ""
+# SEP = ","
+# iteracja = 0
+# for el in lista:
+#     iteracja += 1
+#     if iteracja == 1:
+#         wynikowy_str = el
+#     if iteracja >= 2:
+#         wynikowy_str = wynikowy_str + SEP + el
+# print(wynikowy_str)
+
+# enumerate
+# lista = [
+#     "janek",
+#     "marek",
+#     "zdzichu",
+#     "tomek",
+# ]
+# for iteracja, el in enumerate(lista, start=1):
+#     print(iteracja, el)
+
+
+# lista = [
+#     "janek",
+#     "marek",
+#     "zdzichu",
+#     "tomek",
+# ]
+
+# SEP = ","
+# for iteracja, el in enumerate(lista):
+#     if iteracja == 0:
+#         wynikowy_str = el
+#     else:
+#         wynikowy_str = wynikowy_str + SEP + el
+# print(wynikowy_str)
+
+
+# lista = [
+#     "janek",
+#     "marek",
+#     123,
+#     "zdzichu",
+#     "tomek",
+# ]
+
+# lista = [str(e) for e in lista]
+# SEP = ","
+# wynikowy_str = SEP.join(lista)
+# # wynikowy_str = SEP.join([str(e) for e in lista])
+# print(wynikowy_str)
+
+
+
+#### ZADANIE 21
+
+# Korzystając z kodu z Zadania 20 zbuduj listę stringów zbudowaną z informacji o osobach z wyliczonym BMI
+# posortowaną wg nazwiska (alfabetycznie A-Z).
+# Przykładowy element na liście to string: "Imie;Nazwisko;wzrost;waga;bmi"
+
