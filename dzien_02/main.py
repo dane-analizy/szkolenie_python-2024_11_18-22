@@ -69,5 +69,5 @@
 #### ZADANIE 13
 
 # Pobierz od użytkownika jakiś tekst/napis/słowo. Sprawdź czy jest palindromem,
-# czyli czy pisane od przodu i od tyłu jest takie samo - np. "kajak"
-
+# czyli czy pisane od przodu i od tyłu jest takie samo - np. sos, Anna, sedes, zaraz,
+# kajak, zakaz, owocowo, potop, radar.
