@@ -144,3 +144,47 @@
 
 # Napisz kod który umieści w początkowo pustej liście 10 kolejnych potęg liczby 2 poprzez dodawanie ich do listy
 # Następnie przeiteruj (w drugiej pętli) po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
+
+
+# lista_poteg_liczby_2=[]
+
+# for element_dodawany in range(10):
+#     lista_poteg_liczby_2.append(2**element_dodawany)
+
+# for element_wyswietlany in lista_poteg_liczby_2:
+#     print(element_wyswietlany)
+
+# # to samo co ten drugi for, ale brzydkie
+# for indeks in range(len(lista_poteg_liczby_2)):
+#     print(lista_poteg_liczby_2[indeks])
+
+
+# import random
+
+# lista = []
+# for i in range(10):
+#     lista.append(random.randint(1, 20))
+
+# print(lista)
+
+# # sposób na złączenie 2 list
+# l1 = [1, 2, 3]
+# l2 = [4, 5, 6]
+# lista_a = l1 + l2
+# print(lista_a)
+# lista_b = l2 + l1
+# print(lista_b)
+
+# # kiedyś to były czasy...
+# lista_c = l1.copy()
+# lista_c.extend(l2)
+# print(lista_c)
+
+# lista_d = [*l2, *l1] # [ 4, 5, 6, 1, 2, 3]
+# print(lista_d)
+
+
+#### Zadanie 15
+
+# Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-100.
+# Połącz te dwie listy do jednej i wyświetl wynikową listę na konsoli.
