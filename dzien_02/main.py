@@ -319,9 +319,9 @@
 #     print(f"{imie}, {nazwisko} ")
 
 
-osoby = open("osoby.csv", "r", encoding="utf-8").readlines()
-osoby = [osoba.strip() for osoba in osoby]
-osoby = [osoba.split(";") for osoba in osoby]
+# osoby = open("osoby.csv", "r", encoding="utf-8").readlines()
+# osoby = [osoba.strip() for osoba in osoby]
+# osoby = [osoba.split(";") for osoba in osoby]
 
 # osoby_gotowe = []
 # for osoba in osoby:
@@ -363,17 +363,74 @@ osoby = [osoba.split(";") for osoba in osoby]
 # ]
 
 
-osoby = [osoba.strip().split(";") for osoba in open("osoby.csv", "r", encoding="utf-8")]
+# osoby = [osoba.strip().split(";") for osoba in open("osoby.csv", "r", encoding="utf-8")]
 
-osoby_bmi = [
-    [
-        osoba[0],  # imie
-        osoba[1],  # nazwisko
-        float(osoba[2]),  # float ze wzrostu
-        float(osoba[3]),  # float z wagi
-        float(osoba[3]) / (float(osoba[2]) / 100) ** 2,  # wyliczenie bmi
-    ]
-    for osoba in osoby
-]
+# osoby_bmi = [
+#     [
+#         osoba[0],  # imie
+#         osoba[1],  # nazwisko
+#         float(osoba[2]),  # float ze wzrostu
+#         float(osoba[3]),  # float z wagi
+#         float(osoba[3]) / (float(osoba[2]) / 100) ** 2,  # wyliczenie bmi
+#     ]
+#     for osoba in osoby
+# ]
 
-print(osoby_bmi)
+# print(osoby_bmi)
+
+
+# osoby = [
+#     [
+#         osoba[0],
+#         osoba[1],
+#         float(osoba[2]),
+#         float(osoba[3]),
+#         round(float(osoba[3]) / ((float(osoba[2]) / 100) ** 2), 2),
+#     ]
+#     for osoba in [
+#         osoba.strip().split(";") for osoba in open("osoby.csv", "r", encoding="utf-8")
+#     ]
+# ]
+
+# print(osoby)
+
+
+
+# sortowanie
+lista = [45, 12, 90, 67, 83]
+print(lista)
+
+# lista_posortowana = sorted(lista)
+# print(lista_posortowana)
+
+# # lista_posortowana_odwrotnie = sorted(lista)[::-1]
+# lista_posortowana_odwrotnie = sorted(lista, reverse=True)
+# print(lista_posortowana_odwrotnie)
+
+# sortowanie listy "w miejscu" - ze zmianą samej listy
+# lista.sort()
+# print(lista)
+
+# lista.sort(reverse=True)
+# print(lista)
+
+# import pandas as pd
+
+# dataframe = pd.DataFrame(
+# [
+#     ["Tom", "Cruise", 170.0, 68.0],
+#     ["Dwayne", "Johnson", 196.0, 118.0],
+#     ["Lady", "Gaga", 155.0, 53.0],
+#     ["Elon", "Musk", 188.0, 90.0],
+#     ["Oprah", "Winfrey", 169.0, 77.0],
+#     ["Angela", "Merkel", 165.0, 72.0],
+#     ["Usain", "Bolt", 195.0, 94.0],
+#     ["Zac", "Efron", 173.0, 75.0],
+#     ["Adele", "Adkins", 175.0, 65.0],
+#     ["Danny", "DeVito", 147.0, 70.0],
+# ], columns=['imie', 'nazwisko', 'wzrost', 'waga'])
+
+# print(dataframe)
+
+# dataframe["bmi"] = dataframe["waga"] / (dataframe["wzrost"]/100)**2
+# print(dataframe)
