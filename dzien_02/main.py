@@ -347,6 +347,8 @@ osoby = [osoba.split(";") for osoba in osoby]
 # Napisz program który z pliku osoby.csv pobierze dane i odpowiednio dostosuje ich typy.
 # Po tym niech wyliczy BMI dla każdej z osób. Wartość BMI dla osoby powinna być dodana do rekordu tej osoby.
 
+# BMI = masa [kg] / wzrost^2 [m]
+
 # [
 #     ["Tom", "Cruise", 170.0, 68.0, BMI tomka],
 #     ["Dwayne", "Johnson", 196.0, 118.0 bmi Dłejna],
@@ -359,3 +361,19 @@ osoby = [osoba.split(";") for osoba in osoby]
 #     ["Adele", "Adkins", 175.0, 65.0],
 #     ["Danny", "DeVito", 147.0, 70.0],
 # ]
+
+
+osoby = [osoba.strip().split(";") for osoba in open("osoby.csv", "r", encoding="utf-8")]
+
+osoby_bmi = [
+    [
+        osoba[0],  # imie
+        osoba[1],  # nazwisko
+        float(osoba[2]),  # float ze wzrostu
+        float(osoba[3]),  # float z wagi
+        float(osoba[3]) / (float(osoba[2]) / 100) ** 2,  # wyliczenie bmi
+    ]
+    for osoba in osoby
+]
+
+print(osoby_bmi)
