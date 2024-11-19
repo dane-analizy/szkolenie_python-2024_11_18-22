@@ -71,3 +71,70 @@
 # Pobierz od użytkownika jakiś tekst/napis/słowo. Sprawdź czy jest palindromem,
 # czyli czy pisane od przodu i od tyłu jest takie samo - np. sos, Anna, sedes, zaraz,
 # kajak, zakaz, owocowo, potop, radar.
+
+# tekst = input("podaj tekst: ")
+# tekst = tekst.lower()
+# temp = tekst[::-1]
+# if tekst == temp:
+#     print(f"słowo {tekst} jest palindromem!")
+# else:
+#     print("szukaj dalej palindromu")
+
+
+# tekst = input("podaj tekst: ")
+# if tekst.lower()[::-1] == tekst.lower():
+#     print(f"słowo {tekst} jest palindromem!")
+# else:
+#     print("szukaj dalej palindromu")
+
+
+# dodawanie elementów do listy
+# lista = [] # ==> to jest to samo co: lista = list()
+# lista.append(1)
+# lista.append(2)
+# lista.append(3)
+# lista.append(3)
+# lista.append("napis")
+# print(lista)
+
+# wstawianie w środek
+# lista = [1, 2, 3, 4, 5]
+# lista.insert(2, "napis") # wstawia element "napis" przed obiekt o indeksie 2
+# print(lista)
+
+# usuuwanie elementów z listy
+# lista = [1, 2, 2, 3, 4, 5, 2]
+# print(lista)
+# lista.remove(2)
+#
+
+# wyczyszcznie listy
+# lista = [1,2,3,4,5]
+# lista.clear()
+# print(lista)
+
+# jak zmienić istniejący element na liście?
+# lista = [1, 2, 3, 4, 5]
+# print(lista)
+# lista[3] = "125"
+# print(lista)
+
+# mutowalność
+# lista_a = [1, 2, 3, 4, 5]
+# lista_b = lista_a
+# print("lista_a", lista_a)
+# print("lista_b", lista_b)
+
+# lista_a[2] = "zmieniłem ten element"
+# print("lista_a", lista_a)
+# print("lista_b", lista_b)
+
+
+lista_a = [1, 2, 3, 4, 5]
+lista_b = lista_a.copy()
+print("lista_a", lista_a)
+print("lista_b", lista_b)
+
+lista_a[2] = "zmieniłem ten element"
+print("lista_a", lista_a)
+print("lista_b", lista_b)
