@@ -544,10 +544,31 @@
 # print(wynikowy_str)
 
 
-
 #### ZADANIE 21
 
 # Korzystając z kodu z Zadania 20 zbuduj listę stringów zbudowaną z informacji o osobach z wyliczonym BMI
 # posortowaną wg nazwiska (alfabetycznie A-Z).
 # Przykładowy element na liście to string: "Imie;Nazwisko;wzrost;waga;bmi"
 
+SEP = ";"
+
+osoby = [osoba.strip().split(SEP) for osoba in open("osoby.csv", "r", encoding="utf-8")]
+osoby = [
+    [
+        osoba[0],
+        osoba[1],
+        float(osoba[2]),
+        float(osoba[3]),
+        float(osoba[3]) / ((float(osoba[2]) / 100) ** 2),
+    ]
+    for osoba in osoby
+]
+osoby_posortowane = sorted(osoby, key=lambda osoba: osoba[1], reverse=True)
+
+lista_wynikowa = []
+for osoba in osoby_posortowane:
+    osoba_str = [str(el) for el in osoba]
+    lista_wynikowa.append(SEP.join(osoba_str))
+
+# lista_wynikowa = [SEP.join([str(el) for el in osoba]) for osoba in osoby_posortowane]
+print(lista_wynikowa)
