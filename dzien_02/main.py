@@ -273,5 +273,13 @@
 #     if i % 2                   <== warunek czy dodawać
 #     ]
 
-lista = [i for i in range(50) if i % 2]
-print(lista)
+# lista = [i for i in range(50) if i % 2]
+# print(lista)
+
+
+
+### ZADANIE 17
+
+# Korzystając z listy składanej zbuduj listę 20 losowych liczb z przedziału 0-100.
+# Następnie znowu korzystając z listy składanej zbuduj nową listę - tylko liczby parzyste z listy pierwszej.
+# Wyświetl obie listy na ekranie.
