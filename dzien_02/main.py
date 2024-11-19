@@ -188,3 +188,51 @@
 
 # Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-100.
 # Połącz te dwie listy do jednej i wyświetl wynikową listę na konsoli.
+
+
+# import random
+
+# lista1 = []
+# lista2 = []
+# for i in range(10):
+#     lista1.append(random.randint(100, 200))
+#     lista2.append(random.randint(1, 99))
+
+# lista_wynik = lista1 + lista2
+# print(lista_wynik)
+
+
+# _ jako symboliczna zmienna
+
+# import random
+
+# lista1 = []
+# lista2 = []
+# for _ in range(10):
+#     lista1.append(random.randint(100, 200))
+#     lista2.append(random.randint(1, 99))
+
+# lista_wynik = lista1 + lista2
+# print(lista_wynik)
+
+
+# list-comprehention == listy składane
+
+# klasycznie:
+# lista = []
+# for i in range(10):
+#     lista.append(i)
+# print(lista)
+
+# lista = [i for i in range(10)]  # <- list comprehention
+# print(lista)
+
+
+# potegi_dwojki = [2**potega for potega in range(20)]
+# print(potegi_dwojki)
+
+
+### Zadanie 16
+
+# Korzystając z list składanych wygeneruj listę 10 losowych liczb z zakresu 0-100.
+# Wyświetl tę listę. Spróbuj zrobić to w jak najkrótszym zapisie.
