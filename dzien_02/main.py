@@ -130,11 +130,18 @@
 # print("lista_b", lista_b)
 
 
-lista_a = [1, 2, 3, 4, 5]
-lista_b = lista_a.copy()
-print("lista_a", lista_a)
-print("lista_b", lista_b)
+# lista_a = [1, 2, 3, 4, 5]
+# lista_b = lista_a.copy()
+# print("lista_a", lista_a)
+# print("lista_b", lista_b)
 
-lista_a[2] = "zmieniłem ten element"
-print("lista_a", lista_a)
-print("lista_b", lista_b)
+# lista_a[2] = "zmieniłem ten element"
+# print("lista_a", lista_a)
+# print("lista_b", lista_b)
+
+
+
+### ZADANIE 14
+
+# Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
+# Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
