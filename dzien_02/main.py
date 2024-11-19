@@ -283,3 +283,11 @@
 # Korzystając z listy składanej zbuduj listę 20 losowych liczb z przedziału 0-100.
 # Następnie znowu korzystając z listy składanej zbuduj nową listę - tylko liczby parzyste z listy pierwszej.
 # Wyświetl obie listy na ekranie.
+
+import random
+
+lista = [random.randint(0, 100) for _ in range(20)]
+print(lista)
+
+lista2 = [el for el in lista if el % 2 == 0 and el != 0]
+print(lista2)
