@@ -318,3 +318,44 @@
 #     nazwisko = osoba[1].upper()
 #     print(f"{imie}, {nazwisko} ")
 
+
+osoby = open("osoby.csv", "r", encoding="utf-8").readlines()
+osoby = [osoba.strip() for osoba in osoby]
+osoby = [osoba.split(";") for osoba in osoby]
+
+# osoby_gotowe = []
+# for osoba in osoby:
+#     osoby_gotowe.append(
+#         [
+#             osoba[0],
+#             osoba[1],
+#             float(osoba[2]),
+#             float(osoba[3]),
+#     )
+# print(osoby_gotowe)
+
+
+# osoby_gotowe = [
+#     [osoba[0], osoba[1], float(osoba[2]), float(osoba[3])]
+#     for osoba in osoby
+# ]
+# print(osoby_gotowe)
+
+
+### ZADANIE 19
+
+# Napisz program który z pliku osoby.csv pobierze dane i odpowiednio dostosuje ich typy.
+# Po tym niech wyliczy BMI dla każdej z osób. Wartość BMI dla osoby powinna być dodana do rekordu tej osoby.
+
+# [
+#     ["Tom", "Cruise", 170.0, 68.0, BMI tomka],
+#     ["Dwayne", "Johnson", 196.0, 118.0 bmi Dłejna],
+#     ["Lady", "Gaga", 155.0, 53.0], BMI Gagi,
+#     ["Elon", "Musk", 188.0, 90.0],
+#     ["Oprah", "Winfrey", 169.0, 77.0],
+#     ["Angela", "Merkel", 165.0, 72.0],
+#     ["Usain", "Bolt", 195.0, 94.0],
+#     ["Zac", "Efron", 173.0, 75.0],
+#     ["Adele", "Adkins", 175.0, 65.0],
+#     ["Danny", "DeVito", 147.0, 70.0],
+# ]
