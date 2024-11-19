@@ -1,0 +1,1 @@
+# wyszukianie ciągu znaków w plikach  - zadanie z pathlib.Path()

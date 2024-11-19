@@ -277,6 +277,7 @@
 # print(lista)
 
 
+
 ### ZADANIE 17
 
 # Korzystając z listy składanej zbuduj listę 20 losowych liczb z przedziału 0-100.
@@ -295,6 +296,9 @@
 # s = "Lady;Gaga;155;53"
 # ss = s.split(";")
 # print(ss)
+
+# napis = "a.b\tcd ef"
+# print(napis.split())
 
 
 # osoby = open("osoby.csv", "r", encoding="utf-8").readlines()
@@ -723,3 +727,5 @@
 # print(s2.difference(s1))
 
 # print(len(s2))
+
+
