@@ -297,14 +297,14 @@
 # print(ss)
 
 
-osoby = open("osoby.csv", "r", encoding="utf-8").readlines()
-osoby = [osoba.strip() for osoba in osoby]
-osoby = [osoba.split(";") for osoba in osoby]
+# osoby = open("osoby.csv", "r", encoding="utf-8").readlines()
+# osoby = [osoba.strip() for osoba in osoby]
+# osoby = [osoba.split(";") for osoba in osoby]
 
-for o in osoby:
-    print(o)
+# for o in osoby:
+#     print(o)
 
 
 ### ZADANIE 18
 
-# Napisz program który z pliku dane.csv wyświetli powiększone imię i nazwisko.
+# Napisz program który z pliku osoby.csv wyświetli powiększone (.upper()) imię i nazwisko.
