@@ -550,25 +550,81 @@
 # posortowaną wg nazwiska (alfabetycznie A-Z).
 # Przykładowy element na liście to string: "Imie;Nazwisko;wzrost;waga;bmi"
 
-SEP = ";"
+# SEP = ";"
 
-osoby = [osoba.strip().split(SEP) for osoba in open("osoby.csv", "r", encoding="utf-8")]
-osoby = [
-    [
-        osoba[0],
-        osoba[1],
-        float(osoba[2]),
-        float(osoba[3]),
-        float(osoba[3]) / ((float(osoba[2]) / 100) ** 2),
-    ]
-    for osoba in osoby
-]
-osoby_posortowane = sorted(osoby, key=lambda osoba: osoba[1], reverse=True)
+# osoby = [osoba.strip().split(SEP) for osoba in open("osoby.csv", "r", encoding="utf-8")]
+# osoby = [
+#     [
+#         osoba[0],
+#         osoba[1],
+#         float(osoba[2]),
+#         float(osoba[3]),
+#         float(osoba[3]) / ((float(osoba[2]) / 100) ** 2),
+#     ]
+#     for osoba in osoby
+# ]
+# osoby_posortowane = sorted(osoby, key=lambda osoba: osoba[1], reverse=True)
 
-lista_wynikowa = []
-for osoba in osoby_posortowane:
-    osoba_str = [str(el) for el in osoba]
-    lista_wynikowa.append(SEP.join(osoba_str))
+# lista_wynikowa = []
+# for osoba in osoby_posortowane:
+#     osoba_str = [str(el) for el in osoba]
+#     lista_wynikowa.append(SEP.join(osoba_str))
 
-# lista_wynikowa = [SEP.join([str(el) for el in osoba]) for osoba in osoby_posortowane]
-print(lista_wynikowa)
+# # lista_wynikowa = [SEP.join([str(el) for el in osoba]) for osoba in osoby_posortowane]
+# print(lista_wynikowa)
+
+
+# krotki - po angielsku: tuple
+# krotka = (1, 2, 3, "abc", 12.34, [1, 2], ["a", "b"])
+# print(krotka)
+# # lista z tupla
+# lista = list(krotka)
+# print(lista)
+
+# tupel z listy
+# lista  = [1, 2, 3, "abc", 12.34, [1, 2], ["a", "b"]]
+# print(lista)
+# krotka = tuple(lista)
+# print(krotka)
+
+# krotka_jednoelementowa = (123, )
+# k = ("napis", 13414, "daf")
+# print(k)
+# a,b,c = 1,2,3
+# print(a)
+# print(b)
+# print(c)
+
+
+# a = 10
+# b = 0
+# print(f"{a=} {b=}")
+
+# temp = a
+# a = b
+# b = temp
+# print(f"{a=} {b=}")
+
+# a,b = b,a
+# print(f"{a=} {b=}")
+
+# krotka = (1, 2, 3, 4, 5)
+# # print(krotka[2])
+# # print(krotka[-1])
+# # print(krotka[2:4])
+
+# print(sorted(krotka, reverse=True))  # <- zwróci posortowaną listę
+# print(tuple(sorted(krotka, reverse=True)))  # <- zwróci posortowaną krotkę
+
+# nie ma tuple-coprehention / krotki składane
+# import random
+
+# l = [random.randint(1, 100) for _ in range(10)]
+# k = tuple(l)
+# print(l)
+# print(k)
+
+
+#### ZADANIE 22
+
+# Zbuduj krotkę zawierającą losowo wygenerowane 20 liczb posortowanych rosnąco..
