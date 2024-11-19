@@ -639,3 +639,87 @@
 # kr2 = (7,8,9,1)
 # kr3 = kr1+kr2
 # print(kr3)
+
+
+# s = (1, 23, 45)
+# print(s)
+# print(*s)
+
+# a, b, c = s
+# print(b)
+
+
+# lista plików i katalogów
+# import os
+
+# KATALOG_STARTOWY = "."
+
+# for s in os.walk(KATALOG_STARTOWY):
+#     # print(s)
+#     # s -> nazwa aktualnego folderu
+#     #      lista folderów w środku
+#     #      lista plików w środku
+#     current_path, folders, files = s
+
+#     print(f"\nZawartość '{current_path}':")
+#     if folders:
+#         for folder in folders:
+#             print(f"\t - {folder} [KATALOG]")
+#     else:
+#         print("\tNie ma katalogów")
+
+#     if files:
+#         for file in files:
+#             pelna_sciezka = os.path.join(current_path, file)
+#             print(f"\t - {file} [PLIK]")
+#             print(f"\t   {pelna_sciezka}")
+#     else:
+#         print("\tNie ma plików")
+
+
+# można dadać element
+# if file.endswith(".txt"):
+#     # wczytaj plik
+#     # znajdz w nim ciąg znaków
+#     # wyświetl numer linii gdzie był ten ciąg znaleziony
+
+
+# zbiory = set
+
+# lista = [1, 1, 2, 2, 3, 3, 4, 5, 6, 7]
+# zbior = set(lista)
+# print(lista)
+# print(zbior)
+
+# lista_a = list(zbior)
+# print(lista_a)
+
+# lista unikalnych elementów listy
+# lista = [1, 1, 2, 2, 3, 3, 4, 5, 6, 7]
+# lista = list(set(lista))
+
+# l = [1, 1, "a", "b", "a", "b"]
+# s = set(l)
+# print(l)
+# print(s)
+
+
+# l = [1, 1, "a", "b", "a", "b", (1,2,3), (2,3,4)]
+# s = set(l)
+# print(l)
+# print(s)
+
+
+# s1 = {1,2,3}
+# s2 = {1,3,5,6}
+
+# # s1.add(4)
+# # print(s1)
+
+# print(s1.intersection(s2))
+# print(s1.union(s2))
+
+# print(s1.difference(s2))
+# print(s2.difference(s1))
+
+# print(len(s2))
