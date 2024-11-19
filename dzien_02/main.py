@@ -277,17 +277,34 @@
 # print(lista)
 
 
-
 ### ZADANIE 17
 
 # Korzystając z listy składanej zbuduj listę 20 losowych liczb z przedziału 0-100.
 # Następnie znowu korzystając z listy składanej zbuduj nową listę - tylko liczby parzyste z listy pierwszej.
 # Wyświetl obie listy na ekranie.
 
-import random
+# import random
 
-lista = [random.randint(0, 100) for _ in range(20)]
-print(lista)
+# lista = [random.randint(0, 100) for _ in range(20)]
+# print(lista)
 
-lista2 = [el for el in lista if el % 2 == 0 and el != 0]
-print(lista2)
+# lista2 = [el for el in lista if el % 2 == 0 and el != 0]
+# print(lista2)
+
+
+# s = "Lady;Gaga;155;53"
+# ss = s.split(";")
+# print(ss)
+
+
+osoby = open("osoby.csv", "r", encoding="utf-8").readlines()
+osoby = [osoba.strip() for osoba in osoby]
+osoby = [osoba.split(";") for osoba in osoby]
+
+for o in osoby:
+    print(o)
+
+
+### ZADANIE 18
+
+# Napisz program który z pliku dane.csv wyświetli powiększone imię i nazwisko.
