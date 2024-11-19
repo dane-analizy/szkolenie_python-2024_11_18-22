@@ -308,3 +308,13 @@
 ### ZADANIE 18
 
 # Napisz program który z pliku osoby.csv wyświetli powiększone (.upper()) imię i nazwisko.
+
+# osoby = open("osoby.csv", "r", encoding="utf-8").readlines()
+# osoby = [osoba.strip() for osoba in osoby]
+# osoby = [osoba.split(";") for osoba in osoby]
+
+# for osoba in osoby:
+#     imie = osoba[0].upper()
+#     nazwisko = osoba[1].upper()
+#     print(f"{imie}, {nazwisko} ")
+
