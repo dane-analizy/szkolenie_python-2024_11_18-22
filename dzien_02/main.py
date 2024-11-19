@@ -140,8 +140,7 @@
 # print("lista_b", lista_b)
 
 
-
 ### ZADANIE 14
 
-# Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
-# Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
+# Napisz kod który umieści w początkowo pustej liście 10 kolejnych potęg liczby 2 poprzez dodawanie ich do listy
+# Następnie przeiteruj (w drugiej pętli) po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
