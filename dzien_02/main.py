@@ -627,4 +627,15 @@
 
 #### ZADANIE 22
 
-# Zbuduj krotkę zawierającą losowo wygenerowane 20 liczb posortowanych rosnąco..
+# Zbuduj krotkę zawierającą losowo wygenerowane 20 liczb posortowanych rosnąco.
+# import random
+
+# krotka = [random.randint(1, 100) for i in range(20)]
+# krotka = tuple(sorted(krotka))
+# print(krotka)
+
+# dodawanie krotek
+# kr1 = (1,1,23,4)
+# kr2 = (7,8,9,1)
+# kr3 = kr1+kr2
+# print(kr3)
