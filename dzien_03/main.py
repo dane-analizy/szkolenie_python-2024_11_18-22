@@ -180,3 +180,8 @@
 
 
 # pakiet zewnętrzny - instalacja
+
+from faker import Faker
+
+fake = Faker(locale="pl")
+print(fake.name())
