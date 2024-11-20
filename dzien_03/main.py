@@ -201,18 +201,105 @@
 # Korzystając z pakietu Faker wygeneruj plik CSV zawierający 10 tysięcy rekordów zawierających:
 # id będące kolejną liczbą, imię, nazwisko, nazwa firmy, email, telefon, miasto
 
-from faker import Faker
+# from faker import Faker
 
-fake = Faker(locale="pl")
-with open("spoleczenstwo.csv", "w", encoding="utf-8") as plik:
-    for id in range(10_000):
-        plik.write(
-            f"{id+1};"
-            + f"{fake.first_name()};"
-            + f"{fake.last_name()};"
-            + f"{fake.company()};"
-            + f"{fake.email()};"
-            + f"{fake.phone_number()};"
-            + f"{fake.city()}"
-            + "\n"
-        )
+# fake = Faker(locale="pl")
+# with open("spoleczenstwo.csv", "w", encoding="utf-8") as plik:
+#     for id in range(10_000):
+#         plik.write(
+#             f"{id+1};"
+#             + f"{fake.first_name()};"
+#             + f"{fake.last_name()};"
+#             + f"{fake.company()};"
+#             + f"{fake.email()};"
+#             + f"{fake.phone_number()};"
+#             + f"{fake.city()}"
+#             + "\n"
+#         )
+
+
+# słowniki
+
+# int()
+# float()
+# str()
+# list()
+# tuple()
+# set()
+# dict()
+
+# d = {}
+# d = {
+#     "klucz_int": 1234,
+#     "klucz_float": 123.567,
+#     "klucz_lista": [1, 2, 3, "abc"],
+#     "klucz_slownik": {"a": 1, "b": "napis"},
+# }
+# print(d)
+
+# print(d["klucz_int"], type(d["klucz_int"]))
+# print(type(d))
+
+# lista kluczy
+# print(d.keys())
+# print(d["klucz_slownik"].keys())
+
+# lista wartości
+# print(d.values())
+# print(d['klucz_slownik'].values())
+
+# for klucz in d.keys():
+#     print(f"{klucz=}, wartość: {d[klucz]}")
+
+
+
+# d = {
+#     "klucz_int": 1234,
+#     "klucz_float": 123.567,
+#     "klucz_lista": [1, 2, 3, "abc"],
+#     "klucz_slownik": {"a": 1, "b": "napis"},
+# }
+
+# # print(d.items())
+
+# for k,v in d.items():
+#     print(f"klucz={k}, wartość={v}")
+    
+
+# d = {
+#     19: "wtorek",
+#     (2024, 11, 20): "środa",
+#     # [1,2]: "to nie zadziała"
+# }
+
+# print(d)
+# print(d[19])
+
+# d[20] = "nowa wartość"
+# print(d)
+
+# d[19] = ["to", "zostało", "zmienione"]
+# print(d)
+
+# d = {
+#     "a": 1,
+#     "b": 2,
+#     "c": 3
+# }
+
+# if "e" in d.keys():
+#     print("e JEST na liście kluczy")
+# else:
+#     print("e NIE jest na liście kluczy")
+
+# # print(d["e"])
+# print(d.get("e"))
+# print(d.get("g", "nie mam pańskiego płaszcza"))
+
+
+#### ZADANIE 27
+
+# Wczytaj dane z pliku osoby.csv i utwórz z nich słownik.
+# Kluczem niech będzie krotka stworzona z imienia i nazwiska,
+# a wartością słownik stworzony z wagi i wzrostu (z odpowiednimi kluczami).
+# Wyświetl kolejne elementy słownika w konsoli.
