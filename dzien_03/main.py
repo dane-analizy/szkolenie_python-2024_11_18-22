@@ -348,3 +348,19 @@
 
 # slownik = {element[0]: element[1] for element in osoby if int(element[2])>170}
 # print(slownik)
+
+
+
+#### ZADANIE 28
+
+# Policz ile razy występują poszczególne słowa w tekście "Pana Tadeusza".
+# Użyj słowników - kluczem niech będzie słowo zapisane małymi literami,
+# a wartością - liczba jego wystąpień.
+
+tekst = open("pan-tadeusz.txt").read()
+tekst = tekst.lower()
+
+# tekst rozbić na słowa => .split()
+# utworzyć pusty słownik
+# w pętli po rozbitych słowach aktualizować (dodawać albo zmieniać) krotność wystąpień
+
