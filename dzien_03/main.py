@@ -181,16 +181,23 @@
 
 # pakiet zewnętrzny - instalacja
 
-from faker import Faker
+# from faker import Faker
 
-fake = Faker(locale="pl")
-print(fake.name())
-print(fake.first_name())
-print(fake.last_name())
-print(fake.company())
-print(fake.email())
-print(fake.phone_number())
-print(fake.city())
-print(fake.street_name())
-print(fake.building_number())
-print(fake.zipcode())
+# fake = Faker(locale="pl")
+# print(fake.name())
+# print(fake.first_name())
+# print(fake.last_name())
+# print(fake.company())
+# print(fake.email())
+# print(fake.phone_number())
+# print(fake.city())
+# print(fake.street_name())
+# print(fake.building_number())
+# print(fake.zipcode())
+
+
+
+### ZADANIE 26
+
+# Korzystając z pakietu Faker wygeneruj plik CSV zawierający 10 tysięcy rekordów zawierających:
+# id będące kolejną liczbą, imię, nazwisko, nazwa firmy, email, telefon, miasto
