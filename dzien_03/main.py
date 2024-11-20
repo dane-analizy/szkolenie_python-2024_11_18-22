@@ -358,37 +358,142 @@
 # Wyświetl wszystkie elementy ze słownika, których klucz zaczyna się od "tadeusz".
 
 
-tekst = open("pan-tadeusz.txt", encoding="utf-8").read()
-tekst = tekst.lower()
+# tekst = open("pan-tadeusz.txt", encoding="utf-8").read()
+# tekst = tekst.lower()
 
-# usunąć zbędne znaki typu .,/?
-# tekst = tekst.replace("\n", " ")
-# tekst = tekst.replace(".", " ")
-# tekst = tekst.replace(",", " ")
-# tekst = tekst.replace("!", " ")
-# tekst = tekst.replace("?", " ")
+# # usunąć zbędne znaki typu .,/?
+# # tekst = tekst.replace("\n", " ")
+# # tekst = tekst.replace(".", " ")
+# # tekst = tekst.replace(",", " ")
+# # tekst = tekst.replace("!", " ")
+# # tekst = tekst.replace("?", " ")
 
-zakazane_znaki = ',.?!\n-:;…—*()%-+"«»/'
-for bz in zakazane_znaki:
-    tekst = tekst.replace(bz, " ")
+# zakazane_znaki = ',.?!\n-:;…—*()%-+"«»/'
+# for bz in zakazane_znaki:
+#     tekst = tekst.replace(bz, " ")
 
-# tekst rozbić na słowa => .split()
-tekst = tekst.split()
+# # tekst rozbić na słowa => .split()
+# tekst = tekst.split()
 
-# utworzyć pusty słownik
-licznik_slow = {}
+# # utworzyć pusty słownik
+# licznik_slow = {}
 
-# w pętli po rozbitych słowach aktualizować (dodawać albo zmieniać) krotność wystąpień
-for slowo in tekst:
-    # if slowo in licznik_slow.keys():
-    #     licznik_slow[slowo] +=1
-    # else:
-    #     licznik_slow[slowo] = 1
-    licznik_slow[slowo] = licznik_slow.get(slowo, 0) + 1
+# # w pętli po rozbitych słowach aktualizować (dodawać albo zmieniać) krotność wystąpień
+# for slowo in tekst:
+#     # if slowo in licznik_slow.keys():
+#     #     licznik_slow[slowo] +=1
+#     # else:
+#     #     licznik_slow[slowo] = 1
+#     licznik_slow[slowo] = licznik_slow.get(slowo, 0) + 1
 
-for slowo, liczba in licznik_slow.items():
-    if slowo.startswith("tadeusz"):
-        print(f"{slowo}: {liczba}")
+# for slowo, liczba in licznik_slow.items():
+#     if slowo.startswith("tadeusz"):
+#         print(f"{slowo}: {liczba}")
 
 
-# sorted(licznik_slow)
+# print(sorted(licznik_slow)) # -> to nam posortuje tylko klucze i nie zwróci wartości
+
+# tekst = open("pan-tadeusz.txt", encoding="utf-8").read()
+# tekst = tekst.lower()
+
+# zakazane_znaki = ',.?!\n-:;…—*()%-+"«»/'
+# for bz in zakazane_znaki:
+#     tekst = tekst.replace(bz, " ")
+
+# tekst = tekst.split()
+
+# licznik_slow = {}
+# for slowo in tekst:
+#     if len(slowo) > 4: # pozybcie się słów typu że, o, nad, w
+#         licznik_slow[slowo] = licznik_slow.get(slowo, 0) + 1
+
+
+# lista_posortowanych_krotek_ze_slownika = sorted(licznik_slow.items(), key=lambda kv:kv[1])
+# licznik_slow_posortowany = { k[0]:k[1] for k in lista_posortowanych_krotek_ze_slownika }
+# # print(licznik_slow_posortowany)
+
+# for k,v in licznik_slow_posortowany.items():
+#     if k.startswith("tadeusz"):
+#         print(k,v)
+
+
+# import time
+
+
+# tekst = open("pan-tadeusz.txt", encoding="utf-8").read()
+# tekst = tekst.lower()
+
+# zakazane_znaki = ',.?!\n-:;…—*()%-+"«»/'
+# for bz in zakazane_znaki:
+#     tekst = tekst.replace(bz, " ")
+
+# tekst = tekst.split()
+
+# start_time = time.perf_counter()
+# tekst_unikalne = set(tekst)
+# licznik_slow = {}
+# for slowo in tekst_unikalne:
+#     zliczenie = tekst.count(slowo)
+#     licznik_slow[slowo] = zliczenie
+# end_time = time.perf_counter()
+
+
+# for k, v in licznik_slow.items():
+#     if k.startswith("tadeusz"):
+#         print(k, v)
+
+# print(end_time-start_time)
+
+
+# import time
+
+# tekst = open("pan-tadeusz.txt", encoding="utf-8").read()
+# tekst = tekst.lower()
+
+# zakazane_znaki = ',.?!\n-:;…—*()%-+"«»/'
+# for bz in zakazane_znaki:
+#     tekst = tekst.replace(bz, " ")
+
+# tekst = tekst.split()
+
+# start_time = time.perf_counter()
+# licznik_slow = {}
+# for slowo in tekst:
+#     licznik_slow[slowo] = licznik_slow.get(slowo, 0) + 1
+# end_time = time.perf_counter()
+
+
+# for k, v in licznik_slow.items():
+#     if k.startswith("tadeusz"):
+#         print(k, v)
+
+# print(end_time - start_time)
+
+
+
+
+# import time
+# from collections import Counter
+
+# tekst = open("pan-tadeusz.txt", encoding="utf-8").read()
+# tekst = tekst.lower()
+
+# zakazane_znaki = ',.?!\n-:;…—*()%-+"«»/'
+# for bz in zakazane_znaki:
+#     tekst = tekst.replace(bz, " ")
+
+# tekst = tekst.split()
+
+# start_time = time.perf_counter()
+# licznik_slow = Counter(tekst)
+# end_time = time.perf_counter()
+
+# print(licznik_slow)
+# print(type(licznik_slow))
+
+# for k, v in licznik_slow.items():
+#     if k.startswith("tadeusz"):
+#         print(k, v)
+
+# print(end_time - start_time)
+
