@@ -312,7 +312,7 @@
 # osoby = open("osoby.csv").readlines()
 # osoby = [o.strip().split(";") for o in osoby]
 
-# dane_osob = {}
+# dane_osob = {} # równoznaczne z: dane_osob = dict()
 
 # for osoba in osoby:
 #     klucz = (osoba[0], osoba[1])
