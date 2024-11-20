@@ -497,3 +497,97 @@
 
 # print(end_time - start_time)
 
+
+
+### wyjątki
+
+# try..catch <- java
+# try..except <- python
+
+# a = 10
+# b = 0
+# wynik = a / b
+# print(wynik)
+
+
+# a = 10
+# b = 0
+# try:
+#     wynik_ba = b/a
+#     print("udało się b/a")
+#     print(wynik_ba)
+
+#     wynik_ab = a / b
+#     print("udało się a/b")
+#     print(wynik_ab)
+
+# except:
+#     print("błąd")
+
+# print("koniec")
+
+
+# a = 14
+# b = 3
+
+# try:
+#     w = a/b
+#     print(w)
+# except Exception as e:
+#     print(e)
+#     print(type(e))
+
+
+    
+# a = 14
+# b = "agwg"
+
+# try:
+#     w = a / b
+#     print(w)
+# except ZeroDivisionError:
+#     print("Nie dzielimy przez zero, ziomuś!")
+# except TypeError:
+#     print("No ale dziel to co się da dzielić!")
+# except Exception:
+#     print("Inny błąd")
+
+
+# a = 14
+# b = 14
+
+# try:
+#     w = a / b
+#     print(w)
+#     raise NotImplementedError
+# except ZeroDivisionError:
+#     print("Nie dzielimy przez zero, ziomuś!")
+# except TypeError:
+#     print("No ale dziel to co się da dzielić!")
+# except Exception as e:
+#     print("Inny błąd:", e, type(e))
+
+# # def dzielenie(a,b):
+# #     if b ==0:
+# #         raise ZeroDivisionError
+# #     else:
+# #         return a/b
+
+# s = input("Daj liczbę: ")
+# try:
+#     licza = float(s)
+#     print(licza*2)
+# except Exception as e:
+#     print("Ale to miała być liczba...")
+#     print(f"Błąd: {e} ({type(e)})")
+
+# print("Skończyłem")
+
+# def as_float(s):
+#     try:
+#         ss = float(s)
+#     except:
+#         ss = None
+#     return ss
+
+# as_float(input())
