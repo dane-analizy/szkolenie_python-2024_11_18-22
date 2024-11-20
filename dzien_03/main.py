@@ -324,3 +324,27 @@
 
 
 # print(dane_osob)
+
+
+# nazwa_pliku = "osoby.csv"
+# osoby = open(nazwa_pliku, "r", encoding="utf-8").readlines()
+# osoby = [o.strip().split(";") for o in osoby]
+
+# d = {}
+# for imie, nazwisko, wzrost, waga in osoby:
+#     d[(imie, nazwisko)] = {"wzrost": wzrost, "waga": waga}
+
+# print(d)
+
+
+# dict-comprehention
+
+# lista = [ element for element in iterable ]
+
+
+# nazwa_pliku = "osoby.csv"
+# osoby = open(nazwa_pliku, "r", encoding="utf-8").readlines()
+# osoby = [o.strip().split(";") for o in osoby]
+
+# slownik = {element[0]: element[1] for element in osoby if int(element[2])>170}
+# print(slownik)
