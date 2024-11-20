@@ -49,3 +49,9 @@
 #                     f"{plik.as_posix()} | {numer_linii:>6} | {ile_wystapien:>2} : {linia.rstrip()}"
 #                 )
 
+
+#### ZADANIE 23
+
+# Napisz program który będzie pobierał nazwę pliku z kodem w Pythonie.
+# Program będzie wyświetlał wszystkie linie które **nie** są komentarzami i nie są puste,
+# razem z numerem linii.
