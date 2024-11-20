@@ -303,3 +303,13 @@
 # Kluczem niech będzie krotka stworzona z imienia i nazwiska,
 # a wartością słownik stworzony z wagi i wzrostu (z odpowiednimi kluczami).
 # Wyświetl kolejne elementy słownika w konsoli.
+
+
+osoby = open("osoby.csv").readlines()
+osoby = [o.strip().split(";") for o in osoby]
+print(osoby)
+
+# {
+#     ("Tom", "Cruise"): {"waga": 68, "wzrost": 170},
+#     ("Lady", "Gada"): {"waga": 68, "wzrost": 170},
+# }
