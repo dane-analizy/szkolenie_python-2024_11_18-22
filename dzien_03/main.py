@@ -154,3 +154,26 @@
 # Przepisz plik 'zawodnicy.csv' do pliku 'zawodnicy_clean.csv' zmieniając:
 # - zamień ; na ,
 # - usuń powtórzone linie
+
+# nazwa_pliku_in = "zawodnicy.csv"
+# s = open(nazwa_pliku_in, "r", encoding="utf-8").read()
+# print(s)
+
+# nazwa_pliku_in = "zawodnicy.csv"
+# with open(nazwa_pliku_in, "r", encoding="utf-8") as p:
+#     s = p.read()
+# print(s)
+
+
+# enc = "utf-8"
+# nazwa_pliku = "zawodnicy.csv"
+# nazwa_pliku2 = "zawodnicy_clean.csv"
+
+# zawodnicy = open(nazwa_pliku, "r", encoding="utf-8").readlines()
+# zawodnicy = [linia.strip() for linia in zawodnicy]
+# zawodnicy = set(zawodnicy)
+# zawodnicy = [zawodnik.replace(";", ",") + "\n" for zawodnik in zawodnicy]
+# zawodnicy.sort()
+
+# with open(nazwa_pliku2, "w", encoding="utf-8") as zawodnicy_clean:
+#     zawodnicy_clean.writelines(zawodnicy)
