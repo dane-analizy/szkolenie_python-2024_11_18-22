@@ -196,8 +196,23 @@
 # print(fake.zipcode())
 
 
-
 ### ZADANIE 26
 
 # Korzystając z pakietu Faker wygeneruj plik CSV zawierający 10 tysięcy rekordów zawierających:
 # id będące kolejną liczbą, imię, nazwisko, nazwa firmy, email, telefon, miasto
+
+from faker import Faker
+
+fake = Faker(locale="pl")
+with open("spoleczenstwo.csv", "w", encoding="utf-8") as plik:
+    for id in range(10_000):
+        plik.write(
+            f"{id+1};"
+            + f"{fake.first_name()};"
+            + f"{fake.last_name()};"
+            + f"{fake.company()};"
+            + f"{fake.email()};"
+            + f"{fake.phone_number()};"
+            + f"{fake.city()}"
+            + "\n"
+        )
