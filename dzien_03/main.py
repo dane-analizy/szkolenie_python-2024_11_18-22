@@ -72,3 +72,38 @@
 #     print("Tekst nie jest pusty i 'a' jest pod indeksem 10")
 # else:
 #     print("If dla false")
+
+
+
+# zapisywanie do pliku
+# nazwa_pliku_out = "osoby_2.csv"
+# nazwa_pliku_out_2 = "osoby_3.csv"
+# nazwa_pliku_out_3 = "osoby_4.csv"
+
+# lista = ['pierwsza linia', 'lina druga', 'oraz trzecia linia']
+# napis = "to jest napis który zapiszemy do pliku"
+
+# plik = open(nazwa_pliku_out, "w", encoding="utf-8")
+# plik.write(napis)
+# plik.close()
+
+# plik = open(nazwa_pliku_out_2, "w", encoding="utf-8")
+# lista_do_zapisu = [element+'\n' for element in lista]
+# plik.writelines(lista_do_zapisu)
+# plik.close()
+
+# plik = open(nazwa_pliku_out_3, "w", encoding="utf-8")
+# zawartosc_do_zapisu = "\n".join(lista)
+# plik.write(zawartosc_do_zapisu)
+# plik.close()
+
+
+# context-manager
+
+lista = ["pierwsza linia", "lina druga", "oraz trzecia linia"]
+nazwa_pliku = "plik_wyjsciowy.txt"
+
+# plik = open(nazwa_pliku, "w", encoding="utf-8")
+with open(nazwa_pliku, "w", encoding="utf-8") as plik:
+    lista_do_zapisu = [element+'\n' for element in lista]
+    plik.writelines(lista_do_zapisu)
