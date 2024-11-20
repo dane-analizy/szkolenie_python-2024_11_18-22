@@ -177,3 +177,6 @@
 
 # with open(nazwa_pliku2, "w", encoding="utf-8") as zawodnicy_clean:
 #     zawodnicy_clean.writelines(zawodnicy)
+
+
+# pakiet zewnętrzny - instalacja
