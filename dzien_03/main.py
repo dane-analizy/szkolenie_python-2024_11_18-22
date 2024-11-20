@@ -55,3 +55,20 @@
 # Napisz program który będzie pobierał nazwę pliku z kodem w Pythonie.
 # Program będzie wyświetlał wszystkie linie które **nie** są komentarzami i nie są puste,
 # razem z numerem linii.
+
+
+# nazwa_pliku = "main.py"
+# enc = "utf-8"
+
+# for numer_linii, linia in enumerate(open(nazwa_pliku, "r", encoding=enc), start=1):
+#     tekst = linia.strip()
+
+#     if tekst != "" and not tekst.startswith("#"):
+#         print(f"{numer_linii:>4} | {linia.rstrip()}")    
+
+
+# tekst = "ala ma X"
+# if tekst and len(tekst) >= 10 and tekst[10] == "a":
+#     print("Tekst nie jest pusty i 'a' jest pod indeksem 10")
+# else:
+#     print("If dla false")
