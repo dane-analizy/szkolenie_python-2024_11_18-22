@@ -350,17 +350,45 @@
 # print(slownik)
 
 
-
 #### ZADANIE 28
 
 # Policz ile razy występują poszczególne słowa w tekście "Pana Tadeusza".
 # Użyj słowników - kluczem niech będzie słowo zapisane małymi literami,
 # a wartością - liczba jego wystąpień.
+# Wyświetl wszystkie elementy ze słownika, których klucz zaczyna się od "tadeusz".
 
-tekst = open("pan-tadeusz.txt").read()
+
+tekst = open("pan-tadeusz.txt", encoding="utf-8").read()
 tekst = tekst.lower()
 
-# tekst rozbić na słowa => .split()
-# utworzyć pusty słownik
-# w pętli po rozbitych słowach aktualizować (dodawać albo zmieniać) krotność wystąpień
+# usunąć zbędne znaki typu .,/?
+# tekst = tekst.replace("\n", " ")
+# tekst = tekst.replace(".", " ")
+# tekst = tekst.replace(",", " ")
+# tekst = tekst.replace("!", " ")
+# tekst = tekst.replace("?", " ")
 
+zakazane_znaki = ',.?!\n-:;…—*()%-+"«»/'
+for bz in zakazane_znaki:
+    tekst = tekst.replace(bz, " ")
+
+# tekst rozbić na słowa => .split()
+tekst = tekst.split()
+
+# utworzyć pusty słownik
+licznik_slow = {}
+
+# w pętli po rozbitych słowach aktualizować (dodawać albo zmieniać) krotność wystąpień
+for slowo in tekst:
+    # if slowo in licznik_slow.keys():
+    #     licznik_slow[slowo] +=1
+    # else:
+    #     licznik_slow[slowo] = 1
+    licznik_slow[slowo] = licznik_slow.get(slowo, 0) + 1
+
+for slowo, liczba in licznik_slow.items():
+    if slowo.startswith("tadeusz"):
+        print(f"{slowo}: {liczba}")
+
+
+# sorted(licznik_slow)
