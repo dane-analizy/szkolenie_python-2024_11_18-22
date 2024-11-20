@@ -180,6 +180,7 @@
 
 
 # pakiet zewnętrzny - instalacja
+# pip install nazwa_pakietu
 
 # from faker import Faker
 
@@ -337,6 +338,14 @@
 # print(d)
 
 
+# lista krotek zrzutowana na słownik
+# >>> k = [(1, "a"),(2, "b"), (3, "c")] 
+# >>> k
+# [(1, 'a'), (2, 'b'), (3, 'c')]
+# >>> dict(k)
+# {1: 'a', 2: 'b', 3: 'c'}
+
+
 # dict-comprehention
 
 # lista = [ element for element in iterable ]
@@ -410,7 +419,10 @@
 
 # lista_posortowanych_krotek_ze_slownika = sorted(licznik_slow.items(), key=lambda kv:kv[1])
 # licznik_slow_posortowany = { k[0]:k[1] for k in lista_posortowanych_krotek_ze_slownika }
+# albo:
+# licznik_slow_posortowany = dict(   sorted(licznik_slow.items(), key=lambda kv:kv[1])   )
 # # print(licznik_slow_posortowany)
+
 
 # for k,v in licznik_slow_posortowany.items():
 #     if k.startswith("tadeusz"):
