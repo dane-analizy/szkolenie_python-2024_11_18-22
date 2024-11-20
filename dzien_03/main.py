@@ -185,3 +185,12 @@ from faker import Faker
 
 fake = Faker(locale="pl")
 print(fake.name())
+print(fake.first_name())
+print(fake.last_name())
+print(fake.company())
+print(fake.email())
+print(fake.phone_number())
+print(fake.city())
+print(fake.street_name())
+print(fake.building_number())
+print(fake.zipcode())
