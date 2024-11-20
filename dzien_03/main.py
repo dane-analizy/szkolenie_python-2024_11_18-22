@@ -252,7 +252,6 @@
 #     print(f"{klucz=}, wartość: {d[klucz]}")
 
 
-
 # d = {
 #     "klucz_int": 1234,
 #     "klucz_float": 123.567,
@@ -264,7 +263,7 @@
 
 # for k,v in d.items():
 #     print(f"klucz={k}, wartość={v}")
-    
+
 
 # d = {
 #     19: "wtorek",
@@ -304,12 +303,24 @@
 # a wartością słownik stworzony z wagi i wzrostu (z odpowiednimi kluczami).
 # Wyświetl kolejne elementy słownika w konsoli.
 
-
-osoby = open("osoby.csv").readlines()
-osoby = [o.strip().split(";") for o in osoby]
-print(osoby)
-
 # {
 #     ("Tom", "Cruise"): {"waga": 68, "wzrost": 170},
 #     ("Lady", "Gada"): {"waga": 68, "wzrost": 170},
 # }
+
+
+# osoby = open("osoby.csv").readlines()
+# osoby = [o.strip().split(";") for o in osoby]
+
+# dane_osob = {}
+
+# for osoba in osoby:
+#     klucz = (osoba[0], osoba[1])
+#     wartosc = {"wzrost":float(osoba[2]), "waga":float(osoba[3])}
+#     dane_osob[klucz] = wartosc
+
+# for klucz, wartosc in dane_osob.items():
+#     print(f"{klucz}, {wartosc}")
+
+
+# print(dane_osob)
