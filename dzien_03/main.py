@@ -104,7 +104,7 @@
 
 # # plik = open(nazwa_pliku, "w", encoding="utf-8")
 # with open(nazwa_pliku, "w", encoding="utf-8") as plik:
-#     print("plik w ramach with:", plik)  
+#     print("plik w ramach with:", plik)
 #     print(plik.writable())
 #     lista_do_zapisu = [element+'\n' for element in lista]
 #     plik.writelines(lista_do_zapisu)
@@ -116,3 +116,41 @@
 ### ZADANIE 24
 
 # Przepisz zawartość pliku osoby.csv do results.csv linia po linii.
+
+# nazwa_pliku = "osoby.csv"
+# nazwa_pliku2 = "results.csv"
+
+# with open(nazwa_pliku, "r", encoding="utf-8") as plik:
+#     with open(nazwa_pliku2, "w", encoding="utf-8") as plik2:
+#         for linia in plik.readlines():
+#             plik2.writelines(linia)
+
+
+# inne podejście
+
+# nazwa_pliku = "osoby.csv"
+# nazwa_pliku2 = "results_2.csv"
+
+# osoby = open(nazwa_pliku, "r", encoding="utf-8").readlines()
+
+# plik = open(nazwa_pliku2, "w", encoding="utf-8")
+# for osoba in osoby:
+#     plik.write(osoba)
+
+# plik.close()
+
+
+# inne podejście:
+
+# nazwa_pliku = "osoby.csv"
+# nazwa_pliku2 = "results.csv"
+# osoby = open(nazwa_pliku, "r", encoding="utf-8").readlines()
+# with open(nazwa_pliku2, "w", encoding="utf-8") as plik2:
+#     plik2.writelines(osoby)
+
+
+#### ZADANIE 25
+
+# Przepisz plik 'zawodnicy.csv' do pliku 'zawodnicy_clean.csv' zmieniając:
+# - zamień ; na ,
+# - usuń powtórzone linie
