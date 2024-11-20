@@ -43,7 +43,7 @@
 #     if plik.is_file():
 #         for numer_linii, linia in enumerate(open(plik, "r", encoding=enc), start=1):
 #             tekst = linia.strip().lower()
-#             ile_wystapien = tekst.count(poszukiwany_ciag)        
+#             ile_wystapien = tekst.count(poszukiwany_ciag)
 #             if ile_wystapien:
 #                 print(
 #                     f"{plik.as_posix()} | {numer_linii:>6} | {ile_wystapien:>2} : {linia.rstrip()}"
@@ -64,7 +64,7 @@
 #     tekst = linia.strip()
 
 #     if tekst != "" and not tekst.startswith("#"):
-#         print(f"{numer_linii:>4} | {linia.rstrip()}")    
+#         print(f"{numer_linii:>4} | {linia.rstrip()}")
 
 
 # tekst = "ala ma X"
@@ -72,7 +72,6 @@
 #     print("Tekst nie jest pusty i 'a' jest pod indeksem 10")
 # else:
 #     print("If dla false")
-
 
 
 # zapisywanie do pliku
@@ -100,10 +99,20 @@
 
 # context-manager
 
-lista = ["pierwsza linia", "lina druga", "oraz trzecia linia"]
-nazwa_pliku = "plik_wyjsciowy.txt"
+# lista = ["pierwsza linia", "lina druga", "oraz trzecia linia"]
+# nazwa_pliku = "plik_wyjsciowy.txt"
 
-# plik = open(nazwa_pliku, "w", encoding="utf-8")
-with open(nazwa_pliku, "w", encoding="utf-8") as plik:
-    lista_do_zapisu = [element+'\n' for element in lista]
-    plik.writelines(lista_do_zapisu)
+# # plik = open(nazwa_pliku, "w", encoding="utf-8")
+# with open(nazwa_pliku, "w", encoding="utf-8") as plik:
+#     print("plik w ramach with:", plik)  
+#     print(plik.writable())
+#     lista_do_zapisu = [element+'\n' for element in lista]
+#     plik.writelines(lista_do_zapisu)
+
+# print("plik po with:", plik)
+# print(plik.writable())
+
+
+### ZADANIE 24
+
+# Przepisz zawartość pliku osoby.csv do results.csv linia po linii.
