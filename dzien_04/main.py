@@ -322,6 +322,28 @@
 # Jeśli kodowanie nie zostanie podane ma przyjąć utf-8.
 
 
+# def czytaj_plik(nazwa_pliku, separator=";", kodowanie="utf-8"):
+#     dane = []
+#     try:
+#         with open(nazwa_pliku, "r", encoding=kodowanie) as f:
+#             dane = [tuple(linia.strip().split(separator)) for linia in f]
+#     except Exception as e:
+#         print(e)
+#     return dane
+
+# dane_z_pliku = czytaj_plik("osoby.csv")
+# print(dane_z_pliku)
+
+
+### ZADANIE 32
+
+# Napisz funkcję, która korzystając z danych (i funkcji) z poprzedniego zadania "oczyści" wczytanie
+# informacje - czyli zmieni typy dla wzrostu i wagi.
+# Dla chętnych: niech wynikiem będzie lista słowników o odpowiednich kluczach
+# (imie, nazwisko, wzrost, waga).
+
+
+# w ramach rozwiązania używamy wcześniejszej funkcji:
 def czytaj_plik(nazwa_pliku, separator=";", kodowanie="utf-8"):
     dane = []
     try:
@@ -331,15 +353,66 @@ def czytaj_plik(nazwa_pliku, separator=";", kodowanie="utf-8"):
         print(e)
     return dane
 
-dane_z_pliku = czytaj_plik("osoby.csv")
-print(dane_z_pliku)
+
+def as_float(s):
+    try:
+        f = float(s)
+        return f
+    except Exception as e:
+        print(e)
+        return None
 
 
-### ZADANIE 32
+def oczysc_dane(dane):
+    oczyszczone_dane = []
+    for i in dane:
+        oczyszczone_dane.append(
+            {
+                "imie": i[0],
+                "nazwisko": i[1],
+                "wzrost": as_float(i[2]),
+                "waga": as_float(i[3]),
+            }
+        )
+    return oczyszczone_dane
 
-# Napisz funkcję, która korzystając z danych (i funkcji) z poprzedniego zadania "oczyści" wczytanie
-# informacje - czyli zmieni typy dla wzrostu i wagi.
-# Dla chętnych: niech wynikiem będzie lista słowników o odpowiednich kluczach.
+
+def wczytaj_czyste_dane(nazwa_pliku, separator=";", kodowanie="utf-8"):
+    dane_z_pliku = czytaj_plik(nazwa_pliku, separator=separator, kodowanie=kodowanie)
+    dane_czyste = oczysc_dane(dane_z_pliku)
+    return dane_czyste
+
+
+dane_czyste_z_pliku = wczytaj_czyste_dane("osoby.csv")
+# print(dane_czyste_z_pliku)
+
+
+# dodajmy wyliczenie BMI na oczyszczonych danych
+def bmi(masa: float, wzrost: float) -> float:
+    try:
+        if wzrost > 3:
+            wzrost = wzrost / 100
+        bmi = masa / wzrost**2
+        return bmi
+    except Exception as error:
+        print("Błąd:", error)
+        return -1
+
+
+for osoba in dane_czyste_z_pliku:
+    bmi_osoby = round(bmi(osoba.get("waga"), osoba.get("wzrost")))
+    if bmi_osoby != -1:
+        print(f"{osoba.get('imie')} {osoba.get('nazwisko')} ma BMI = {bmi_osoby}")
+    else:
+        print(f"{osoba.get('imie')} {osoba.get('nazwisko')} - JEST JAKIŚ PROBLEM")
+
+
+# def g(a1, b, c):
+#     return a1 + b + c
+
+
+# def f(a, b):
+#     g(a1=a, b=b, c=a)
 
 
 # requests
