@@ -326,11 +326,13 @@ def czytaj_plik(nazwa_pliku, separator=";", kodowanie="utf-8"):
     dane = []
     try:
         with open(nazwa_pliku, "r", encoding=kodowanie) as f:
-            dane = [linia.strip().split(separator) for linia in f]
+            dane = [tuple(linia.strip().split(separator)) for linia in f]
     except Exception as e:
         print(e)
     return dane
 
+dane_z_pliku = czytaj_plik("osoby.csv")
+print(dane_z_pliku)
 
 # requests
 # baza danych
