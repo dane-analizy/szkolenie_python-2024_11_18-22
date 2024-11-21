@@ -216,5 +216,17 @@
 # print(suma)
 
 
+
+#### ZADANIE 30
+
+# Przygotuj funkcję bmi(), która wyliczy na podstawie wagi i wzrostu (parametry) BMI z dokładnością
+# do 2 miejsc po przecinku.
+# W przypadku pojawienia się wyjątku (try..except) - wypisze na konsoli błąd i zwróci wartość -1
+
+# bmi = weight / (height**2)
+
+
+
+
 # requests
 # baza danych
