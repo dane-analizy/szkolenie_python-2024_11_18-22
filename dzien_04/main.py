@@ -243,28 +243,29 @@
 # bmi = weight / (height**2)
 
 
-def bmi(masa: float, wzrost: float) -> float:
-    """Funkcja oblicza wskaźnik BMI.
+# rozwiązanie zadania oraz dokumentowanie funkcji
+# def bmi(masa: float, wzrost: float) -> float:
+#     """Funkcja oblicza wskaźnik BMI.
 
-    Argumenty:
-     - masa = waga w kg
-     - wzrost = wysokość w cm lub m (o ile mniej niż 3 m)
+#     Argumenty:
+#      - masa = waga w kg
+#      - wzrost = wysokość w cm lub m (o ile mniej niż 3 m)
 
-    Zwraca:
-     - wartość współczynnika BMI albo -1 jeśli błąd
-    """
-    try:
-        if wzrost > 3:
-            wzrost = wzrost / 100
-        bmi = masa / wzrost**2
-        return bmi
-    except Exception as error:
-        print("Błąd:", error)
-        return -1
+#     Zwraca:
+#      - wartość współczynnika BMI albo -1 jeśli błąd
+#     """
+#     try:
+#         if wzrost > 3:
+#             wzrost = wzrost / 100
+#         bmi = masa / wzrost**2
+#         return bmi
+#     except Exception as error:
+#         print("Błąd:", error)
+#         return -1
 
 
-print(bmi(80, "180"))
-print(bmi(80, 180))
+# print(bmi(80, "180"))
+# print(bmi(80, 180))
 
 
 # napis = "ala ma kota\na bożena ma psa"
@@ -279,6 +280,53 @@ print(bmi(80, 180))
 #     print(napis_wielolinijkowy)
 
 # guwhguwg()
+
+
+# argumenty nazwane i argumenty domyślne
+
+
+# def funkcja(a, b, c):
+#     print(f"""
+#           {a=}
+#           {b=}
+#           {c=}
+#     """)
+
+
+# # funkcja(1213, "napisa", 3)
+# funkcja(c=3, a=5, b=1)
+# funkcja(123, c=567, b=987)
+
+# # funkcja(12300, c=56700, 98700)
+
+
+# def funkcja(a, b=500, c=100):
+#     print(f"""
+#           {a=}
+#           {b=}
+#           {c=}
+#     """)
+
+# # funkcja(1, 2)
+# # funkcja(1, c=2)
+# # funkcja(1, b=2)
+# funkcja(a=25)
+# funkcja(75)
+
+
+### ZADANIE 31
+
+# Napisz funkcję która zwróci pod postacią listy list zawartość pliku,
+# którego nazwę przekażemy przez pierwszy argument funkcji.
+# Plik ma być otwarty z kodowaniem podanym jako drugi argument funkcji.
+# Jeśli kodowanie nie zostanie podane ma przyjąć utf-8.
+
+def czytaj_plik(nazwa_pliku, kodowanie......)
+    ....
+    
+    return ....
+
+
 
 # requests
 # baza danych
