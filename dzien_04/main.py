@@ -125,16 +125,25 @@
 
 
 # zapisanie YAMLa
-import yaml
-import json
+# import yaml
+# import json
 
-# wczytanie jsona
-with open("dane.json", "r", encoding="utf-8") as fp:
-    dane = json.load(fp)
+# # wczytanie jsona
+# with open("dane.json", "r", encoding="utf-8") as fp:
+#     dane = json.load(fp)
 
-# zapisanie tych samych danych do yamla
-with open("dane_zapisane.yaml", "w", encoding="utf-8") as fp:
-    yaml.dump(dane, fp, sort_keys=False)
+# # zapisanie tych samych danych do yamla
+# with open("dane_zapisane.yaml", "w", encoding="utf-8") as fp:
+#     yaml.dump(dane, fp, sort_keys=False)
+
+
+### konfiguracja w pliku
+# plik -> config.yaml
+
+### ZADANIE 29
+
+# Wczytaj z pliku 'config.yaml' konfigurację dostępu do bazy danych,
+# niech będzie zapisana w zmiennej 'config'
 
 
 # funkcje + moduły
