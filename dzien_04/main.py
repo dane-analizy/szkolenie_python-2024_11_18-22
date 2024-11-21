@@ -415,5 +415,10 @@ for osoba in dane_czyste_z_pliku:
 #     g(a1=a, b=b, c=a)
 
 
+# moduły
+
+# __name__
+
+
 # requests
 # baza danych
