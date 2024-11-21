@@ -243,7 +243,16 @@
 # bmi = weight / (height**2)
 
 
-def bmi(masa: float | int, wzrost: float | int) -> float:
+def bmi(masa: float, wzrost: float) -> float:
+    """Funkcja oblicza wskaźnik BMI.
+
+    Argumenty:
+     - masa = waga w kg
+     - wzrost = wysokość w cm lub m (o ile mniej niż 3 m)
+
+    Zwraca:
+     - wartość współczynnika BMI albo -1 jeśli błąd
+    """
     try:
         if wzrost > 3:
             wzrost = wzrost / 100
@@ -257,6 +266,19 @@ def bmi(masa: float | int, wzrost: float | int) -> float:
 print(bmi(80, "180"))
 print(bmi(80, 180))
 
+
+# napis = "ala ma kota\na bożena ma psa"
+# print(napis)
+
+# def guwhguwg():
+#     napis_wielolinijkowy = """pierwsza
+
+#         druga (a właściwie 3)
+# czwarta
+# (puste)"""
+#     print(napis_wielolinijkowy)
+
+# guwhguwg()
 
 # requests
 # baza danych
