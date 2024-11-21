@@ -145,6 +145,14 @@
 # Wczytaj z pliku 'config.yaml' konfigurację dostępu do bazy danych,
 # niech będzie zapisana w zmiennej 'config'
 
+# import yaml
+
+# with open("config.yaml", "r", encoding="utf-8") as fp:
+#     config = yaml.safe_load(fp)
+
+# print(config)
+# print(config['db_user'])
+
 
 # funkcje + moduły
 # requests
