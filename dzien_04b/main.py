@@ -74,7 +74,7 @@
 # Współpraca z usługami sieciowymi
 
 # https://httpbin.org/
-# https://it-tools.tech/
+# https://it-tools.tech/ -> HTTP status codes
 
 # pakiet requests
 # pip install requests
@@ -176,7 +176,5 @@ def get_nbp_data(
 
 
 for d in range(1, 31):
-    sitko_walut = get_nbp_data(dzien=d, obslugiwane_waluty=["jpy", "idr"])
-    print(sitko_walut)
     sitko_walut = get_nbp_data(dzien=d, obslugiwane_waluty=["jpy", "idr"])
     print(sitko_walut)
