@@ -59,13 +59,20 @@
 # print(utils.etl.as_float("124"))
 
 
-from utils.operations import wczytaj_czyste_dane
-from utils.calc import bmi
+##### ZADANIE bez numeru
 
-dane = wczytaj_czyste_dane("osoby.csv")
+# Przenieś funkcje z poprzednich zadań (czytającą dane z pliku oraz wyświetlającą listę)
+# do oddzielnego modułu `utils`. Użyj ich po zaimportowaniu z plików.
 
-for o in dane:
-    print(f"{o['imie']}: BMI = {bmi(o['waga'], o['wzrost'])}")
+# from utils.operations import wczytaj_czyste_dane
+# from utils.calc import bmi
 
+# dane = wczytaj_czyste_dane("osoby.csv")
+
+# for o in dane:
+#     print(f"{o['imie']}: BMI = {bmi(o['waga'], o['wzrost'])}")
+
+
+# Współpraca z usługami sieciowymi
 
 # requests
