@@ -202,7 +202,7 @@
 # # zwracanie czegoś z funkcji
 # def dodaj(a, b):
 #     d = 10_000
-#     suma = a + b + c + d 
+#     suma = a + b + c + d
 #     print("Suma w środku funkcji:", suma)
 #     return suma
 
@@ -214,7 +214,6 @@
 
 # print(a, b)
 # print(suma)
-
 
 
 # def czy_dodatnia(a):
@@ -244,6 +243,19 @@
 # bmi = weight / (height**2)
 
 
+def bmi(masa: float | int, wzrost: float | int) -> float:
+    try:
+        if wzrost > 3:
+            wzrost = wzrost / 100
+        bmi = masa / wzrost**2
+        return bmi
+    except Exception as error:
+        print("Błąd:", error)
+        return -1
+
+
+print(bmi(80, "180"))
+print(bmi(80, 180))
 
 
 # requests
