@@ -334,5 +334,13 @@ def czytaj_plik(nazwa_pliku, separator=";", kodowanie="utf-8"):
 dane_z_pliku = czytaj_plik("osoby.csv")
 print(dane_z_pliku)
 
+
+### ZADANIE 32
+
+# Napisz funkcję, która korzystając z danych (i funkcji) z poprzedniego zadania "oczyści" wczytanie
+# informacje - czyli zmieni typy dla wzrostu i wagi.
+# Dla chętnych: niech wynikiem będzie lista słowników o odpowiednich kluczach.
+
+
 # requests
 # baza danych
