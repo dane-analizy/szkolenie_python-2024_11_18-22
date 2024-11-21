@@ -180,21 +180,40 @@
 # print("po wykonananiu wszystkich funkcji")
 
 
-def funkcja_z_argumentem(liczba, napis):
-    # sprawdzenie typu argumentu 'liczba'
-    # if isinstance(liczba, (int, float) ):
-    #     print(f"Argument {liczba=}")
-    # else:
-    #     print(f"Podaj liczbę a nie {type(liczba)}")
-    print(f"Argument {liczba=}")
-    print(f"Argument {napis=}")
+# argumenty
+# def funkcja_z_argumentem(liczba, napis):
+#     # sprawdzenie typu argumentu 'liczba'
+#     # if isinstance(liczba, (int, float) ):
+#     #     print(f"Argument {liczba=}")
+#     # else:
+#     #     print(f"Podaj liczbę a nie {type(liczba)}")
+#     print(f"Argument {liczba=}")
+#     print(f"Argument {napis=}")
 
 
-# funkcja_z_argumentem(123, "ala ma kota")
-# funkcja_z_argumentem(99.99, "żyrafy wchodzą na szafy")
+# # funkcja_z_argumentem(123, "ala ma kota")
+# # funkcja_z_argumentem(99.99, "żyrafy wchodzą na szafy")
 
-# funkcja nie sprawdzi czy podane argumenty są odpowiednich typów
-# funkcja_z_argumentem("ala ma kota", [1, 2, 3])
+# # funkcja nie sprawdzi czy podane argumenty są odpowiednich typów
+# # funkcja_z_argumentem("ala ma kota", [1, 2, 3])
+
+# c = 1000
+# d = 0
+# # zwracanie czegoś z funkcji
+# def dodaj(a, b):
+#     d = 10_000
+#     suma = a + b + c + d 
+#     print("Suma w środku funkcji:", suma)
+#     return suma
+
+
+# print(c)
+# print(dodaj(10, 5))
+# print(d)
+# print(dodaj(20, 19))
+
+# print(a, b)
+# print(suma)
 
 
 # requests
