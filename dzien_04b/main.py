@@ -75,4 +75,64 @@
 
 # Współpraca z usługami sieciowymi
 
-# requests
+# https://httpbin.org/ 
+# https://it-tools.tech/
+
+# pakiet requests
+# pip install requests
+# import requests
+
+# get - pobierz
+# response = requests.get("https://onet.pl")
+
+# print(response.status_code)
+# if response.status_code == 200:
+#     print("Udało się otrzymać odpowiedź z serwera")
+
+# print(response.content)
+
+
+
+# GET do API NBP
+
+# import requests
+# url = "https://api.nbp.pl/api/exchangerates/tables/A/2024-11-21?format=json"
+# res = requests.get(url)
+# print(res.content)
+# print(res.text)
+# dane = res.json()
+# print(dane)
+# print(type(dane))
+
+# print(dane[0])
+# print(type(dane[0]))
+
+
+# notowanie z jednego dnia
+import requests
+
+
+rok = 2024
+miesiac = 11
+dzien = 21
+
+url = f"https://api.nbp.pl/api/exchangerates/tables/A/{rok}-{miesiac}-{dzien}?format=json"
+
+res = requests.get(url)
+if res.status_code != 200:
+    print(f"Błąd: {res.status_code}")
+
+dane = res.json()
+notowanie = dane[0]
+kursy = notowanie["rates"]
+
+for waluta in kursy:
+    print(waluta)
+
+
+#### ZADANIE 33
+
+# Pobierz dane z NBP i wyświetl na konsoli kurs:
+# franka (chf), euro (eur) i dolara (usd) oraz pole effectiveDate
+# dla wszystkich dni z listopada 2024 (1-30)
+# Brak notowania z danego dnia rozpoznasz po status code != 200
