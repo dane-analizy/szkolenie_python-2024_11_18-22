@@ -1,0 +1,37 @@
+users:
+  - id: 1
+    # Pan Prezes
+    name: Jan Kowalski
+    email: jan.kowalski@example.com
+    orders:
+      - orderId: 101
+        date: "2024-11-20"
+        total: 199.99
+        items:
+          # elementy w koszyku
+          - productId: 1
+            productName: Laptop
+            quantity: 1
+            price: 1999.99
+          - productId: 2
+            productName: Monitor
+            quantity: 1
+            price: 299.99
+  
+  
+# konfiguracja bazy danych  
+  - id: 2
+    name: Anna Nowak # księgowa
+    email: anna.nowak@example.com
+    orders:
+      - orderId: 102
+        date: "2024-11-21"
+        total: 49.99
+        items:
+          - productId: 2
+            productName: Myszka bezprzewodowa
+            quantity: 1
+            price: 49.99
+
+
+# tu można dopisać kolejnych

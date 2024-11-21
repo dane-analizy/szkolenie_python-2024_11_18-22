@@ -87,28 +87,30 @@
 # print(df)
 
 
-import json
+# import json
 
-from faker import Faker
+# from faker import Faker
 
-fake = Faker(locale="pl")
+# fake = Faker(locale="pl")
 
-lista_osob = []
-for i in range(5):
-    f_name = fake.first_name()
-    l_name = fake.last_name()
-    number = fake.phone_number()
-    slownik_jedna_osoba = {"imie": f_name, "nazwisko": l_name, "telefon": number}
-    lista_osob.append(slownik_jedna_osoba)
+# lista_osob = []
+# for i in range(5):
+#     f_name = fake.first_name()
+#     l_name = fake.last_name()
+#     number = fake.phone_number()
+#     slownik_jedna_osoba = {"imie": f_name, "nazwisko": l_name, "telefon": number}
+#     lista_osob.append(slownik_jedna_osoba)
 
 
-for numer_obiektu, obiekt in enumerate(lista_osob, start=1):
-    nazwa_pliku = f"{numer_obiektu}_dane_lukasza.json"
-    with open(nazwa_pliku, "w", encoding="UTF-8") as plik:
-        json.dump(obiekt, plik)
+# for numer_obiektu, obiekt in enumerate(lista_osob, start=1):
+#     nazwa_pliku = f"{numer_obiektu}_dane_lukasza.json"
+#     with open(nazwa_pliku, "w", encoding="UTF-8") as plik:
+#         json.dump(obiekt, plik)
 
 
 # yamle
+
+
 # funkcje + moduły
 # requests
 # baza danych
