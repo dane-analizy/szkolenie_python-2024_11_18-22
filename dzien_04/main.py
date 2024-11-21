@@ -110,9 +110,33 @@
 
 # yamle
 
+# czytanie z pliku YAML
+# potrzebny pakiet PyYAML
+# pip install PyYAML
+
+# wczytanie YAMLa
+# import yaml
+
+# with open("dane.yaml", "r", encoding="utf-8") as fp:
+#     dane = yaml.safe_load(fp) ## UWAGA - nie .load()
+
+# print(dane)
+# print(type(dane))
+
+
+# zapisanie YAMLa
+import yaml
+import json
+
+# wczytanie jsona
+with open("dane.json", "r", encoding="utf-8") as fp:
+    dane = json.load(fp)
+
+# zapisanie tych samych danych do yamla
+with open("dane_zapisane.yaml", "w", encoding="utf-8") as fp:
+    yaml.dump(dane, fp, sort_keys=False)
+
 
 # funkcje + moduły
 # requests
-# baza danych
-# baza danych
 # baza danych
