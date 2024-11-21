@@ -44,7 +44,73 @@
 # którego nazwa to kolejny numer (1.json, 2.json)
 
 
+# import json
+
+# from faker import Faker
+
+# fake = Faker(locale="pl")
+
+# lista = []
+# for i in range(5):
+#     lista.append(
+#         {
+#             "imię": fake.first_name(),
+#             "nazwisko": fake.last_name(),
+#             "telefon": fake.phone_number(),
+#         }
+#     )
+
+# lista = [
+#     {
+#         "imie": fake.first_name(),
+#         "nazwisko": fake.last_name(),
+#         "telefon": fake.phone_number(),
+#     }
+#     for _ in range(5)
+# ]
+
+# for i, o in enumerate(lista, start=1):
+#     with open(f"{i}.json", "w", encoding="utf-8") as fp:
+#         json.dump(o, fp)
+
+# str(i) + ".json"
+# f"{i}.json"
+
+
+# pandas z listy słowników robi dataframe na pstryknięcie:
+# import pandas as pd
+# lista = [
+#     {"productId": 1, "productName": "Laptop", "quantity": 1, "price": 1999.99},
+#     {"productId": 2, "productName": "Monitor", "quantity": 1, "price": 399.99},
+# ]
+# df = pd.DataFrame(lista)
+# print(df)
+
+
+import json
+
+from faker import Faker
+
+fake = Faker(locale="pl")
+
+lista_osob = []
+for i in range(5):
+    f_name = fake.first_name()
+    l_name = fake.last_name()
+    number = fake.phone_number()
+    slownik_jedna_osoba = {"imie": f_name, "nazwisko": l_name, "telefon": number}
+    lista_osob.append(slownik_jedna_osoba)
+
+
+for numer_obiektu, obiekt in enumerate(lista_osob, start=1):
+    nazwa_pliku = f"{numer_obiektu}_dane_lukasza.json"
+    with open(nazwa_pliku, "w", encoding="UTF-8") as plik:
+        json.dump(obiekt, plik)
+
+
 # yamle
 # funkcje + moduły
 # requests
+# baza danych
+# baza danych
 # baza danych
