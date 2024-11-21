@@ -154,6 +154,48 @@
 # print(config['db_user'])
 
 
-# funkcje + moduły
+### funkcje + moduły
+
+
+# def funkcja():
+#     print("jestem w funkcji")
+#     print("nadal jestem w funkcji")
+
+#     for i in range(5):
+#         print(i)
+
+#     print("nadal jestem w funkcji, ale już kończę")
+
+
+# def funkcja_dwa():
+#     print("jestem funkcja 2")
+
+
+# print("poza funkcją - przed wywołaniem")
+# funkcja()
+# print("po wykonananiu funkcji pierwszy raz")
+# funkcja_dwa()
+# funkcja()
+# funkcja_dwa()
+# print("po wykonananiu wszystkich funkcji")
+
+
+def funkcja_z_argumentem(liczba, napis):
+    # sprawdzenie typu argumentu 'liczba'
+    # if isinstance(liczba, (int, float) ):
+    #     print(f"Argument {liczba=}")
+    # else:
+    #     print(f"Podaj liczbę a nie {type(liczba)}")
+    print(f"Argument {liczba=}")
+    print(f"Argument {napis=}")
+
+
+# funkcja_z_argumentem(123, "ala ma kota")
+# funkcja_z_argumentem(99.99, "żyrafy wchodzą na szafy")
+
+# funkcja nie sprawdzi czy podane argumenty są odpowiednich typów
+# funkcja_z_argumentem("ala ma kota", [1, 2, 3])
+
+
 # requests
 # baza danych
