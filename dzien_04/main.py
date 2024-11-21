@@ -217,6 +217,24 @@
 
 
 
+# def czy_dodatnia(a):
+#     if a > 0:
+#         return "dodatnie"
+#     elif a <0:
+#         return "ujemne"
+#     else:
+#         return "zero"
+
+
+# def czy_dodatnia(a):
+#     znak = "zero"
+#     if a > 0:
+#         znak = "dodatnie"
+#     elif a < 0:
+#         znak = "ujemne"
+
+#     return znak
+
 #### ZADANIE 30
 
 # Przygotuj funkcję bmi(), która wyliczy na podstawie wagi i wzrostu (parametry) BMI z dokładnością
