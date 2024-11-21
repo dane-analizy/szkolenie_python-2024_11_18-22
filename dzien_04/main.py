@@ -321,11 +321,15 @@
 # Plik ma być otwarty z kodowaniem podanym jako drugi argument funkcji.
 # Jeśli kodowanie nie zostanie podane ma przyjąć utf-8.
 
-def czytaj_plik(nazwa_pliku, kodowanie......)
-    ....
-    
-    return ....
 
+def czytaj_plik(nazwa_pliku, separator=";", kodowanie="utf-8"):
+    dane = []
+    try:
+        with open(nazwa_pliku, "r", encoding=kodowanie) as f:
+            dane = [linia.strip().split(separator) for linia in f]
+    except Exception as e:
+        print(e)
+    return dane
 
 
 # requests
