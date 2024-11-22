@@ -84,3 +84,8 @@
 # 3. pobrać dane z bazy -> zapytanie: "SELECT * FROM players;"
 # 4. wyniki zapisać do pliku (otworzyć plik, sformatować wyniki do postaci rekord = 1 linia, zapisać kolejne linie)
 # 5. posprzątać: zamknąć bazę, zamknąć plik
+
+
+def db_to_csv(config, nazwa_pliku):
+    ....
+    
