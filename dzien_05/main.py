@@ -44,3 +44,32 @@
 
 # connection string - adres do bazy danych
 # conn_str = "postgresql+psycopg2://<UserName>:<Password>@<Database_Host>/<Database_Name>
+
+# w utils/config.py - utworzona funkcja do czytania konfiguracji
+
+from utils.config import load_config
+from sqlalchemy import create_engine, text
+
+# CONFIG_FILE = "db_config.yaml"
+CONFIG_FILE = "db_config_lukasz.yaml"
+
+config = load_config(CONFIG_FILE)
+
+conn_str = f"postgresql+psycopg2://{config['db_user']}:{config['db_pass']}@{config['db_host']}:{config['db_port']}/{config['db_name']}"
+# print(conn_str)
+
+engine = create_engine(conn_str)
+print(engine)
+
+conn = engine.connect()
+print(conn)
+
+results = conn.execute(text("SELECT * FROM players;"))
+print(results)
+
+for record in results:
+    print(record)
+
+
+
+conn.close()
