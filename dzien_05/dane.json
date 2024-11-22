@@ -1,0 +1,51 @@
+[
+    {
+        "player_id": 1,
+        "first_name": "Jan",
+        "last_name": "Kowalski",
+        "height": "1.84",
+        "weight": "85"
+    },
+    {
+        "player_id": 2,
+        "first_name": "Marian",
+        "last_name": "Nowak",
+        "height": "1.90",
+        "weight": "50"
+    },
+    {
+        "player_id": 3,
+        "first_name": "Zdzis\u0142aw",
+        "last_name": "Dyrman",
+        "height": "1.73",
+        "weight": "74"
+    },
+    {
+        "player_id": 4,
+        "first_name": "Zenon",
+        "last_name": "Brz\u0119czyk",
+        "height": "1.64",
+        "weight": "95"
+    },
+    {
+        "player_id": 5,
+        "first_name": "Chuck",
+        "last_name": "Norris",
+        "height": "1.82",
+        "weight": "78"
+    },
+    {
+        "player_id": 6,
+        "first_name": "Krzysztof",
+        "last_name": "Jarzyna",
+        "height": "1.68",
+        "weight": "70"
+    },
+    {
+        "player_id": 7,
+        "first_name": "J\u00f3zek",
+        "last_name": "Nowak",
+        "height": "1.78",
+        "weight": "99"
+    }
+]
