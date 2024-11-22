@@ -13,22 +13,22 @@
 
 # Wkładamy do niej trochę danych:
 
-# insert into players (first_name,last_name,height,weight)  
-# values ('Jan', 'Kowalski', 184, 85);  
-  
-# insert into players (first_name,last_name,height,weight)  
-# values ('Marian', 'Nowak', 190, 50);  
-  
-# insert into players (first_name,last_name,height,weight)  
-# values ('Zdzisław', 'Dyrman', 173 ,74);  
-  
-# insert into players (first_name,last_name,height,weight)  
-# values ('Zenon', 'Brzęczyk', 164, 95);  
-  
-# insert into players (first_name,last_name,height,weight)  
-# values ('Chuck','Norris', 182, 78);  
-  
-# insert into players (first_name,last_name,height,weight)  
+# insert into players (first_name,last_name,height,weight)
+# values ('Jan', 'Kowalski', 184, 85);
+
+# insert into players (first_name,last_name,height,weight)
+# values ('Marian', 'Nowak', 190, 50);
+
+# insert into players (first_name,last_name,height,weight)
+# values ('Zdzisław', 'Dyrman', 173 ,74);
+
+# insert into players (first_name,last_name,height,weight)
+# values ('Zenon', 'Brzęczyk', 164, 95);
+
+# insert into players (first_name,last_name,height,weight)
+# values ('Chuck','Norris', 182, 78);
+
+# insert into players (first_name,last_name,height,weight)
 # values ('Krzysztof','Jarzyna', 168, 70);
 
 
@@ -47,29 +47,40 @@
 
 # w utils/config.py - utworzona funkcja do czytania konfiguracji
 
-from utils.config import load_config
-from sqlalchemy import create_engine, text
+# from utils.config import load_config
+# from sqlalchemy import create_engine, text
 
-# CONFIG_FILE = "db_config.yaml"
-CONFIG_FILE = "db_config_lukasz.yaml"
+# # CONFIG_FILE = "db_config.yaml"
+# CONFIG_FILE = "db_config_lukasz.yaml"
 
-config = load_config(CONFIG_FILE)
+# config = load_config(CONFIG_FILE)
 
-conn_str = f"postgresql+psycopg2://{config['db_user']}:{config['db_pass']}@{config['db_host']}:{config['db_port']}/{config['db_name']}"
-# print(conn_str)
+# conn_str = f"postgresql+psycopg2://{config['db_user']}:{config['db_pass']}@{config['db_host']}:{config['db_port']}/{config['db_name']}"
+# # print(conn_str)
 
-engine = create_engine(conn_str)
-print(engine)
+# engine = create_engine(conn_str)
+# print(engine)
 
-conn = engine.connect()
-print(conn)
+# conn = engine.connect()
+# print(conn)
 
-results = conn.execute(text("SELECT * FROM players;"))
-print(results)
+# results = conn.execute(text("SELECT * FROM players;"))
+# print(results)
 
-for record in results:
-    print(record)
+# for record in results:
+#     print(record)
+
+# conn.close()
 
 
+#### ZADANIE 34
 
-conn.close()
+# Napisz funkcję, która przyjmie przez parametr nazwę pliku do którego zapisze wszystkie
+# wiersze z tabeli `players` (w bazie) w formacie csv
+
+# plan:
+# 1. wczytać konfigurację
+# 2. połączyć się do bazy danych
+# 3. pobrać dane z bazy -> zapytanie: "SELECT * FROM players;"
+# 4. wyniki zapisać do pliku (otworzyć plik, sformatować wyniki do postaci rekord = 1 linia, zapisać kolejne linie)
+# 5. posprzątać: zamknąć bazę, zamknąć plik
