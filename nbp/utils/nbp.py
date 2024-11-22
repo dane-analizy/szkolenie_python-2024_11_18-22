@@ -29,7 +29,7 @@ def get_nbp_data(
     kursy = notowanie["rates"]
 
     for waluta in kursy:
-        if waluta.get("code").lower() in obslugiwane_waluty:
+        if waluta.get("code").upper() in obslugiwane_waluty:
             wynik[waluta.get("code")] = waluta.get("mid")
 
     return wynik
