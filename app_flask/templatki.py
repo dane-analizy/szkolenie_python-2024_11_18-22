@@ -31,7 +31,19 @@ def templatka3():
 def templatka_parametry(ziomus=None):
     if not ziomus:
         ziomus = "Jasio"
-    return render_template("temp_parametry.html", imie=ziomus)
+    return render_template("temp_parametry.html", imie=ziomus, nazwisko="stałe nazisko")
+
+@app.route("/tabela")
+def tabela():
+    kursy = [
+        {"data": "data1", "waluta": "waluta1", "kurs": 1},
+        {"data": "data2", "waluta": "waluta2", "kurs": 2},
+        {"data": "data3", "waluta": "waluta3", "kurs": 3},
+        {"data": "data4", "waluta": "waluta4", "kurs": 4},
+        {"data": "data5", "waluta": "waluta5", "kurs": 5},
+    ]
+    return render_template("tabelka.html", notowania=kursy, current_waluta="EUR")
+
 
 if __name__ == "__main__":
     app.run(debug=True)

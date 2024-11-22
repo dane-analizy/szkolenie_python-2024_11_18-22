@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>tabelka</title>
+</head>
+
+<body>
+    <h1> Notowania dla {{ current_waluta }}</h1>
+    <table border="1">
+        <tr>
+            <td><b>Data</b></td>
+            <td><b>Waluta</b></td>
+            <td><b>Kurs</b></td>
+        </tr>
+        {% for rekord in notowania %}
+        <tr>
+            <td>{{ rekord.data }}</td>
+            <td>{{ rekord.waluta }}</td>
+            <td>{{ rekord.kurs }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
