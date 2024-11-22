@@ -30,3 +30,17 @@
   
 # insert into players (first_name,last_name,height,weight)  
 # values ('Krzysztof','Jarzyna', 168, 70);
+
+
+# potrzebne pakiety: SQLAlchemy - framework
+# pakiet do konkretnego typu bazy: https://docs.sqlalchemy.org/en/20/core/engines.html#backend-specific-urls
+# - pakiet do łączenia się z PostgreSQL
+# 		- `pip install psycopg2`
+# 	- pakiet do łączenia się z Oracle
+# 		- `pip install cx_oracle`
+# 	- pakiet do łączenia się z MS SQL
+# 		- `pip install pymssql`
+
+
+# connection string - adres do bazy danych
+# conn_str = "postgresql+psycopg2://<UserName>:<Password>@<Database_Host>/<Database_Name>
