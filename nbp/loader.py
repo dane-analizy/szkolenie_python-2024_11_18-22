@@ -58,7 +58,7 @@ for m in range(1,12):
                             waluty (data, waluta, kurs)
                             VALUES (
                                 '{nbp_data['data']}',
-                                '{waluta.upper()}'
+                                '{waluta.upper()}',
                                 {nbp_data[waluta.upper()]}
                                 )
                             """
