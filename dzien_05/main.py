@@ -86,13 +86,8 @@
 # 5. posprzątać: zamknąć bazę, zamknąć plik
 
 
-
 from utils.config import load_config
-from utils.db import (
-    open_db,
-    disconnect_from_db
-)
-from utils.db import run_db_query
+from utils.db import disconnect_from_db, open_db, run_db_query
 
 # CONFIG_FILE = "db_config.yaml"
 CONFIG_FILE = "db_config_lukasz.yaml"
@@ -101,21 +96,23 @@ CONFIG_FILE = "db_config_lukasz.yaml"
 def db_to_csv(config, nazwa_pliku):
     # 1. wczytać konfigurację
     config = load_config(config)
-    
+
     # 2. połączyć się do bazy danych
     db_conn = open_db(config)
-    
+
     # 3. pobrać dane z bazy -> zapytanie: "SELECT * FROM players;"
     query = """
     SELECT
-        *
+        first_name
+        , weight
+        , last_name
     FROM
         players
     WHERE
         weight < 80
     ;
     """
-    
+
     res = run_db_query(db_conn, query)
 
     # 4. wyniki zapisać do pliku (otworzyć plik, sformatować wyniki do postaci rekord = 1 linia, zapisać kolejne linie)
@@ -133,11 +130,12 @@ def db_to_csv(config, nazwa_pliku):
             #     + ";"
             #     + str(linia[4])
             # )
-            linia_zapis = ";".join( [ str(el) for el in linia ]  )
+            linia_zapis = ";".join([str(el) for el in linia])
             # print(linia_zapis)
-            plik.write(linia_zapis+"\n")
-    
+            plik.write(linia_zapis + "\n")
+
     disconnect_from_db(db_conn)
     # 5. posprzątać: zamknąć bazę, zamknąć plik
+
 
 db_to_csv(CONFIG_FILE, "zawodnicy.csv")
